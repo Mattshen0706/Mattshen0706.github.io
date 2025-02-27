@@ -21,17 +21,23 @@ place-items:center;
     }
 
 .main .invictus{
-width:30%;
+width:50%;
 grid-area: 1/1;
-z-index: 2;
+z-index: 3;
 }
+
+.main .drawing{
+    grid-area: 1/1;
+    z-index: 1;
+    position: absolute;
+    }
 
 .main .snake{
     width:14%;
     grid-area: 1/1;
-    z-index: 1;
+    z-index: 2;
     }
 
 .main .invictus:hover{
-        width:35%;
-        }
+    width:55%;
+    }
