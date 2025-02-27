@@ -1,0 +1,17 @@
+#HEADING1{
+    color: red;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    margin:auto;
+    text-align:center;
+}
+
+#PARAPGRAPH1{
+    color:black;
+    font-weight:lighter;
+    font: size 10px;
+    font-family: 'helvetica';
+    margin:auto;
+    text-align:center;
+}
