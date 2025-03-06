@@ -1,0 +1,39 @@
+body{
+    width:100%;
+background-color: black;
+}
+
+.slide1{
+    background-color: black;
+    width:100vw;
+    height:auto;
+    position:relative;
+    color:white;
+    margin-bottom:1vh;
+    overflow: auto;
+    border: none;
+
+}
+
+.slide1_backgroundvideo{
+    width:100%;
+    height:auto;
+}
+
+.slide2{
+    background-color: rgb(255, 0, 0);
+    width:100vw;
+    height:auto;
+    position:relative;
+    color:white;
+    margin-bottom:1vh;
+}
+
+.slide3{
+    background-color: rgb(255, 0, 0);
+    width:100%;
+    height:auto;
+    position:relative;
+    color:white;
+}
+

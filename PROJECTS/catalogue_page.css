@@ -1,0 +1,56 @@
+
+
+.split {
+    height: 100%;
+    width: 33.33%;
+    position: fixed;
+    top: 0;
+    padding-top: 20px;
+    z-index: 1;
+    /* overflow-y:auto */
+  }
+
+.leftformat{
+background-color:rgb(255, 254, 249);
+width:33.33%;
+display:block;
+
+}
+
+.middleformat{
+  background-color: rgb(255, 254, 249);
+  left:33.33%;
+  width:33.33%;
+  display:block;
+
+  }
+
+.rightformat{
+  background-color: rgb(255, 254, 249);
+right:0;
+width:33.33%;
+display:block;
+
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background-image: url('whitefront.png');
+  }
+
+.titleformat1{
+    color:rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    font-size: medium;
+
+    }
+
+.shirt{
+  text-align: left;
+  width:max-content;
+}
