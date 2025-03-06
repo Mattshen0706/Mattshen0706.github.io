@@ -1,0 +1,67 @@
+body{
+    background-color: black;
+}
+
+.HEADING{
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 50px;
+    font-weight:bold;
+    font-family:Arial, Helvetica Neue, sans-serif;
+    text-decoration:none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    position: relative;
+    
+}
+.HEADING{
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 100px;
+    font-weight:bold;
+    font-family:Arial, Helvetica eue, sans-serif;
+    margin:auto;
+    padding:25%
+
+}
+
+.SUBHEADING{
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 15px;
+    font-weight:lighter;
+    font-family:Arial, Helvetica Neue, sans-serif;
+    text-decoration:none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    position: relative;
+}
+
+.HOMEDIRECTORY{
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 8px;
+    font-weight:bolder;
+    font-family:Arial, Helvetica Neue, sans-serif;
+    text-decoration:none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    position: relative;
+}
+
+
+.SUBHEADING:hover{
+    color: red
+}
+
+.HOMEDIRECTORY:hover{
+    color: rgb(197, 197, 197);
+    font-size: 12px;
+}
+
