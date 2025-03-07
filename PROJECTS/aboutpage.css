@@ -1,7 +1,32 @@
 body{
     width:100%;
 background-color: black;
+
 }
+
+.horizontal_slider{
+    width: 100vw;
+    height:45vh;
+    position:relative;
+
+    overflow:auto;
+    white-space: nowrap; 
+}
+
+.centreword{
+text-align: center;
+color:yellow;
+border: solid;
+border-color: blue;
+
+}
+
+.photosetting{
+    display:inline-block;
+
+
+}
+
 
 .slide1{
     background-color: black;
@@ -11,7 +36,8 @@ background-color: black;
     color:white;
     margin-bottom:1vh;
     overflow: auto;
-    border: none;
+    border: solid;
+    border-color: blue;
 
 }
 
@@ -27,6 +53,7 @@ background-color: black;
     position:relative;
     color:white;
     margin-bottom:1vh;
+    
 }
 
 .slide3{
@@ -35,5 +62,6 @@ background-color: black;
     height:auto;
     position:relative;
     color:white;
+    
 }
 
