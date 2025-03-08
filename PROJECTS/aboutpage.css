@@ -54,8 +54,8 @@ border-style: solid;  */
 }
 
 .singlepolaroid{
-height:47vh;
-width:38vh;
+max-height:47vh;
+max-width:auto;;
 white-space: nowrap; 
 display:inline-block;
 /* border-color: rgb(255, 0, 0);
@@ -79,6 +79,7 @@ overflow-x:hidden;
     margin-right:2vh;
     margin-bottom:2vh;
     background-color: white;
+    object-fit: cover;
     
 /* border-color: rgb(200, 255, 0);
 
