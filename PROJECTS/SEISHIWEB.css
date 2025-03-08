@@ -36,7 +36,7 @@ z-index: 3;
     height: calc(93% - 15vh);
     top: 15vh;
     z-index: 3;
-    border:solid
+    /* border:solid */
 }
     
 
@@ -71,7 +71,7 @@ z-index: 3;
     line-height:25px;
 }
 .videotext1{
-    border:white;
+    /* border:white; */
     margin-left:auto;
     margin-right:auto;
     grid-area: 1 / 1;
@@ -82,7 +82,7 @@ z-index: 3;
     }
 
 .videotext2{
-        border:white;
+        /* border:white; */
         margin-left:auto;
         margin-right:auto;
         grid-area: 1 / 1;
@@ -99,7 +99,7 @@ z-index: 3;
     }
 
 .snake{
-    border:white;
+    /* border:white; */
     width:30%;
     margin-left:auto;
     margin-right:auto;
