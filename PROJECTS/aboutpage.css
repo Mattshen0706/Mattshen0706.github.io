@@ -6,27 +6,86 @@ background-color: black;
 
 .horizontal_slider{
     width: 100vw;
-    height:45vh;
+    height:49vh;
     position:relative;
-
+    margin-top: 5vh;
+color: white;
     overflow:auto;
-    white-space: nowrap; 
+white-space: nowrap; 
+    /* border-color: white;
+    border-style: solid;  */
 }
 
-.centreword{
-text-align: center;
-color:yellow;
-border: solid;
-border-color: blue;
 
+
+.textcentre{
+/* border-color: rgb(200, 255, 0);
+border-style: solid; */
+position:absolute;
+left:0%;
+bottom: 50%;
+font-size: 4em;;
+width: 100%;
+height:12%;
+color: #f8f8f8;
+font-family: HelveticaNeueBold;
 }
+
+.descriptorcentre{
+    /* border-color: rgb(200, 255, 0);
+    border-style: solid; */
+    position:absolute;
+    left:0%;
+    bottom: 6%;
+    font-size: 0.8em;;
+    width: 100%;
+    height:12%;
+    color: #000000;
+    font-family: CasualHuman;
+    font-weight: bolder;
+    }
 
 .photosetting{
     display:inline-block;
+    position:relative;
+    /* border-color: rgb(200, 255, 0);
 
-
+border-style: solid;  */
 }
 
+.singlepolaroid{
+height:47vh;
+width:38vh;
+white-space: nowrap; 
+display:inline-block;
+/* border-color: rgb(255, 0, 0);
+border-style: solid;  */
+position:relative;
+text-align: center; 
+justify-content: center;
+word-wrap: break-word;
+overflow-x:hidden;
+}
+
+.polaroid_format{
+    height:30vh;
+    width:30vh;
+    padding-top:3vh;
+    padding-left:2vh;
+    padding-right:2vh;
+    padding-bottom:10vh;
+    margin-top:2vh;
+    margin-left:2vh;
+    margin-right:2vh;
+    margin-bottom:2vh;
+    background-color: white;
+    
+/* border-color: rgb(200, 255, 0);
+
+border-style: solid;  */
+
+    
+}
 
 .slide1{
     background-color: black;
@@ -65,3 +124,100 @@ border-color: blue;
     
 }
 
+
+@font-face
+{
+    font-family: 'HelveticaNeueRegular';
+    src: url('../fonts/HelveticaNeue.eot');
+    src: local('Helvetica Neue Bold'), local('HelveticaNeue'), url('../fonts/HelveticaNeue.woff') format('woff'), url('../fonts/HelveticaNeue.ttf') format('truetype');
+}
+
+@font-face
+{
+    font-family: 'HelveticaNeueCondensedBold';
+    src: url('../fonts/HelveticaNeue-CondensedBold.eot');
+    src: local('HelveticaNeue-CondensedBold'), local('HelveticaNeue-CondensedBold'), url('../fonts/HelveticaNeue-CondensedBold.woff') format('woff'), url('../fonts/HelveticaNeue-CondensedBold.ttf') format('truetype');
+}
+
+@font-face
+{
+    font-family: 'HelveticaNeueLight';
+    src: url('../fonts/HelveticaNeue-Light.eot');
+    src: local('HelveticaNeue-Light'), local('HelveticaNeue-Light'), url('../fonts/HelveticaNeue-Light.woff') format('woff'), url('../fonts/HelveticaNeue-CondensedBold.ttf') format('truetype');
+}
+
+@font-face
+{
+    font-family: 'HelveticaNeueBold';
+    src: url('../fonts/HelveticaNeue-Bold.eot');
+    src: local('HelveticaNeue-Bold'), local('HelveticaNeue-Bold'), url('../fonts/HelveticaNeue-Bold.woff') format('woff'), url('../fonts/HelveticaNeue-CondensedBold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Bastliga'; /* Choose a name for your font */
+    src: url('../MEDIA/BastligaOne.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'SignatureDecember'; /* Choose a name for your font */
+    src: url('../MEDIA/SignatureDecember.otf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Akira'; /* Choose a name for your font */
+    src: url('../MEDIA/Akira.otf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Chicago'; /* Choose a name for your font */
+    src: url('../MEDIA/Chicago.otf') format('truetype');
+}
+
+
+@font-face {
+    font-family: 'CasualHuman'; /* Choose a name for your font */
+    src: url('../MEDIA/CasualHuman.otf') format('truetype');
+}
+
+
+@font-face {
+    font-family: 'CompactBrush'; /* Choose a name for your font */
+    src: url('../MEDIA/CompactBrush.otf') format('truetype');
+}
+
+@font-face {
+    font-family: 'CompactBrush'; /* Choose a name for your font */
+    src: url('../MEDIA/CompactBrush.ttf') format('truetype');
+}
+
+
+@font-face {
+    font-family: 'Donna'; /* Choose a name for your font */
+    src: url('../MEDIA/Donna.otf') format('truetype');
+}
+
+
+@font-face {
+    font-family: 'Geniga'; /* Choose a name for your font */
+    src: url('../MEDIA/Geniga.otf') format('truetype');
+}
+
+
+@font-face {
+    font-family: 'AmericanSignature'; /* Choose a name for your font */
+    src: url('../MEDIA/AmericanSignature.otf') format('truetype');
+}
+
+@font-face {
+    font-family: 'HighSpirited'; /* Choose a name for your font */
+    src: url('../MEDIA/HighSpirited.ttf') format('truetype');
+}
+
+
+
+
+
+
+.textcentre:hover{
+    font-size: 350%;
+}
