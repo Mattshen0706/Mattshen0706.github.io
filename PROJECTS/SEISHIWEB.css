@@ -10,16 +10,6 @@ body{
 }
 
 
-.main{
-display:grid;
-grid-template-columns: 1fr;
-grid-template-rows: 1fr;
-place-items:center;
-width:100%;
-/* border: solid; */
-
-    }
-    
 .invictus{
 /* border:white; */
 width:40vw;
@@ -31,7 +21,7 @@ z-index: 3;
 
 .invictus1{
     /* border:white; */
-    width:40vw;
+    width:100%;
     position:absolute;
     height: calc(93% - 15vh);
     top: 15vh;
@@ -41,13 +31,11 @@ z-index: 3;
     
 
 
-    .stickyimage{
-    position:sticky;
-    top: 40vh;
-    width:100%;
-    /* border:solid; */
+.stickyimage{
+position:sticky;
+top: 40vh;
+width:100%;
 
-    
     }
     
 
@@ -117,10 +105,12 @@ z-index: 3;
 width:auto;
 height: 100hv;
 position:relative;
+align-items: center;
+text-align: center;
 }
 
 .slides{
-    width:100%;
+    width:50%;
     height: 100hv;
     align-items: center;
     justify-content: center;
@@ -173,9 +163,9 @@ position:relative;
 
 .backgroundvideo{
     width:100vw;
-    grid-area: 1 / 1;
-    z-index: 1;
     opacity: 0.75;
+    transform: translate(-25%);
+
     }
 
 .snake:hover{
