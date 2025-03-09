@@ -17,6 +17,7 @@ body{
     align-items: center;
     text-align: center;
     /* border:solid; */
+    overflow:visible;
     }
 
     .slide1{
@@ -31,6 +32,8 @@ body{
         width:100%;
         opacity: 0.75;
         /* border:solid; */
+        position:relative;
+        z-index: -1;
         }
 
         .invictus1{
@@ -43,6 +46,7 @@ body{
             align-items: center;
             justify-content: center;
             text-align: center;
+            z-index:2;
         }
             
         .stickyimage{
