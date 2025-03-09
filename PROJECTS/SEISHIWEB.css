@@ -16,7 +16,7 @@ body{
     position:relative;
     align-items: center;
     text-align: center;
-    /* border:solid; */
+    border:solid;
     }
 
     .slide1{
@@ -88,13 +88,13 @@ body{
         margin-top: 15vh;
         margin-bottom:15vh;
         line-height:25px;
-        /* border:solid;
-            border:solid; */
+        border:solid;
+            border:solid;
 }
 
 .snakefaq{
     /* border:white; */
-    width:60%;
+    width:90%;
     margin-left:0;
     margin-right:0;
     /* border:solid; */
