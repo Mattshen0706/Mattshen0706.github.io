@@ -176,6 +176,7 @@ border-style: solid;  */
     position:relative;
     color:white;
     margin-bottom:1vh;
+    align-items: center;
     
 }
 
