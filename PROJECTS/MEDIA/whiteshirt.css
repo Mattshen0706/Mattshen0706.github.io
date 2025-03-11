@@ -1,0 +1,44 @@
+
+
+.split {
+    height: 100%;
+    width: 50%;
+    position: fixed;
+    top: 0;
+    padding-top: 20px;
+    z-index: 1;
+    overflow-y:auto
+  }
+
+.leftformat{
+background-color:rgb(255, 254, 249);
+left:0;
+width:50%;
+}
+
+.rightformat{
+  background-color: rgb(0, 0, 0);
+right:0;
+width:50%;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+.titleformat1{
+    color:rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    font-size: medium;
+
+    }
+
+.shirt{
+  text-align: left;
+  width:max-content;
+}

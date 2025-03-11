@@ -1,0 +1,170 @@
+body{
+    background-color: black;
+}
+
+.LINKHOME{
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 50px;
+    font-weight:bold;
+    font-family:Arial, Helvetica Neue, sans-serif;
+    text-decoration:none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    position: relative;
+    padding-top:5%;
+    
+}
+.HOME{
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 100px;
+    font-weight:bold;
+    font-family:Arial, Helvetica eue, sans-serif;
+    margin:auto;
+    padding-top:10%;
+    padding-bottom:15%;
+
+}
+
+#contact{
+
+  float:left;
+  padding-left:20%;
+  display:inline;
+  padding-bottom: 5%;
+  
+}
+
+#logo{
+
+  float:auto;
+  display:inline;
+
+  
+}
+
+#aboutme{
+
+  float:right;
+  padding-right:20%;
+  display:inline;
+  padding-bottom: 5%;
+  
+  
+}
+
+#weekly1{
+
+  float:left;
+  padding-left:20%;
+
+  
+}
+
+#weekly2{
+
+  float:right;
+  padding-right:20%;
+
+  
+  
+}
+
+#weekly3{
+
+  float:auto;
+  display: block;
+
+}
+
+.SUBHEADING{
+  color: rgb(255, 255, 255);
+  text-align: center;
+  font-size: 10px;
+  font-weight:light;
+  font-family:Arial, Helvetica Neue, sans-serif;
+  text-decoration:none;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  position: relative;
+  
+  
+}
+
+#MENU{
+  text-align: center;
+  display:inline;
+}
+
+#MENUITEM{
+  text-align:center;
+  visibility:collapse;
+}
+
+#MENU:hover{
+  text-align: center;
+  
+}
+
+#MENUITEM:hover{
+  text-align: center;
+  visbility:visible;
+}
+
+.SUBHEADING2{
+  color: rgb(255, 255, 255);
+  text-align: center;
+  font-size: 10px;
+  font-weight:bold;
+  font-family:Arial, Helvetica Neue, sans-serif;
+  text-decoration:none;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  position: relative;
+}
+
+.SUBHEADING2:hover{
+  font-size: 15px;
+}
+
+p{
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 15px;
+    font-weight:lighter;
+    margin:auto;
+
+}
+
+.LINKHOME::after,
+.LINKHOME::before {
+  content:'';
+  position: relative;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(to left, #ffffffc2, #000000);
+  bottom: 0;
+  left: 15px;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.4s;
+}
+
+.LINKHOME::before {
+  top: 0px;
+  left:-15px;
+  transform-origin: right;
+  background: linear-gradient(to right, #ffffffc2, #000000);
+}
+.LINKHOME:hover::after,
+.LINKHOME:hover::before {
+  transform: scaleX(3);
+}
+

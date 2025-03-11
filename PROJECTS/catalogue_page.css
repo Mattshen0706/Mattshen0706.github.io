@@ -1,0 +1,59 @@
+body{
+  
+  margin:0;
+  padding:0;
+  background:rgb(232, 232, 232);
+}
+
+.containerleft{
+width:50vw;
+float:left;
+height:100vh;
+display: inline;
+position: absolute;
+overflow:none;
+background:rgb(232, 232, 232);
+}
+
+.contentleft{
+width:50%;
+justify-content: center;
+text-align: center;
+overflow:none;
+}
+
+.containerright{
+  width:50vw;
+  float:right;
+  height:100vh;
+  display: inline;
+  position: relative;
+  overflow:none;
+  background:rgb(232, 232, 232);
+  }
+
+  .contentright{
+  width:50%;
+  justify-content: center;
+  text-align: center;
+  overflow:none;
+}
+
+.expand1{
+width:100%;
+}
+
+.expand1:hover{
+  transform:scale(110%);
+
+}
+
+
+.expand2{
+  width:100%;
+  }
+  
+  .expand2:hover{
+    transform:scale(110%);
+  
+  }

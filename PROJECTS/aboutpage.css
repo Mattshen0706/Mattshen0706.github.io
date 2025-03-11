@@ -1,0 +1,292 @@
+html, body{
+background-color: black;
+margin:0;
+padding:0;
+}
+
+
+.firstblock{
+max-width:100vw;
+max-height: auto;;
+align-items: center;
+text-align: center;
+margin-top: 0%;
+margin-bottom: 0%;
+display:inline-block;
+overflow: hidden;
+position:relative;
+}
+
+.secondblock{
+margin-top: 0%;
+width:100%;
+height:auto;
+padding-top: 20%;
+overflow-x:hidden;
+position:relative;
+align-items: center;
+text-align: center;
+    }
+
+.secondblocktext1{
+    position:absolute;
+    color:white;
+    width: 100%;
+    font-size: 3vw;
+    left:0;
+    top:30%;
+    font-family: HelveticaNeueBold;
+
+}
+
+.secondblocktext2{
+    position:absolute;
+    color:white;
+    width: 60%;
+transform:translate(20vw,0);
+    font-size: 1vw;
+    left:0;
+    top:50%;
+    font-family: HelveticaNeueLight;
+    line-height: 2vw;
+
+}
+
+    .backgroundtext1{
+display:inline-block;
+position:sticky;
+overflow:hidden;
+max-width:100vh;
+font-family:HelveticaNeueBold;
+font-size: 5vw;
+word-break: break-word;
+transform:translate(5vw,-6vh);
+margin-right: 5vw;
+
+    }
+
+.linebreak{
+    line-break: 1px;
+}
+
+.horizontal_slider{
+    width: 100vw;
+    height:49vh;
+    position:relative;
+    margin-top: 5vh;
+color: white;
+    overflow:auto;
+white-space: nowrap; 
+
+}
+
+
+
+.textcentre{
+/* border-color: rgb(200, 255, 0);
+border-style: solid; */
+position:absolute;
+left:0%;
+bottom: 50%;
+font-size: 4em;;
+width: 100%;
+height:12%;
+color: #f8f8f8;
+font-family: 'HelveticaNeueBold';
+}
+
+.descriptorcentre{
+    /* border-color: rgb(200, 255, 0);
+    border-style: solid; */
+    position:absolute;
+    left:0%;
+    bottom: 6%;
+    font-size: 0.6em;
+    width: 100%;
+    height:12%;
+    color: #000000;
+    font-family: 'HelveticaNeueLight';
+    }
+
+.photosetting{
+    display:inline-block;
+    position:relative;
+    /* border-color: rgb(200, 255, 0);
+
+border-style: solid;  */
+}
+
+.singlepolaroid{
+max-height:47vh;
+max-width:auto;;
+white-space: nowrap; 
+display:inline-block;
+/* border-color: rgb(255, 0, 0);
+border-style: solid;  */
+position:relative;
+text-align: center; 
+justify-content: center;
+word-wrap: break-word;
+overflow-x:hidden;
+}
+
+.polaroid_format{
+    height:30vh;
+    width:30vh;
+    padding-top:3vh;
+    padding-left:2vh;
+    padding-right:2vh;
+    padding-bottom:10vh;
+    margin-top:2vh;
+    margin-left:6vh;
+    margin-right:6vh;
+    margin-bottom:2vh;
+    background-color: white;
+    object-fit: cover;
+    
+/* border-color: rgb(200, 255, 0);
+
+border-style: solid;  */
+
+    
+}
+
+.slide1{
+    background-color: black;
+    width:100vw;
+    height:auto;
+    position:relative;
+    color:white;
+    margin-bottom:1vh;
+    overflow: auto;
+    border: solid;
+    border-color: blue;
+
+}
+
+.slide1_backgroundvideo{
+    width:100%;
+    height:auto;
+}
+
+.slide2{
+    background-color: rgb(255, 0, 0);
+    width:100vw;
+    height:auto;
+    position:relative;
+    color:white;
+    margin-bottom:1vh;
+    align-items: center;
+    
+}
+
+.slide3{
+    background-color: rgb(255, 0, 0);
+    width:100%;
+    height:auto;
+    position:relative;
+    color:white;
+    
+}
+
+.backgroundvideo{
+    width:100vw;
+
+}
+
+@font-face
+{
+    font-family: 'HelveticaNeueRegular';
+    src: url('../fonts/HelveticaNeue.eot');
+    src: local('Helvetica Neue Bold'), local('HelveticaNeue'), url('../fonts/HelveticaNeue.woff') format('woff'), url('../fonts/HelveticaNeue.ttf') format('truetype');
+}
+
+@font-face
+{
+    font-family: 'HelveticaNeueCondensedBold';
+    src: url('../fonts/HelveticaNeue-CondensedBold.eot');
+    src: local('HelveticaNeue-CondensedBold'), local('HelveticaNeue-CondensedBold'), url('../fonts/HelveticaNeue-CondensedBold.woff') format('woff'), url('../fonts/HelveticaNeue-CondensedBold.ttf') format('truetype');
+}
+
+@font-face
+{
+    font-family: 'HelveticaNeueLight';
+    src: url('../fonts/HelveticaNeue-Light.eot');
+    src: local('HelveticaNeue-Light'), local('HelveticaNeue-Light'), url('../fonts/HelveticaNeue-Light.woff') format('woff'), url('../fonts/HelveticaNeue-CondensedBold.ttf') format('truetype');
+}
+
+@font-face
+{
+    font-family: 'HelveticaNeueBold';
+    src: url('../fonts/HelveticaNeue-Bold.eot');
+    src: local('HelveticaNeue-Bold'), local('HelveticaNeue-Bold'), url('../fonts/HelveticaNeue-Bold.woff') format('woff'), url('../fonts/HelveticaNeue-CondensedBold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Bastliga'; /* Choose a name for your font */
+    src: url('../MEDIA/BastligaOne.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'SignatureDecember'; /* Choose a name for your font */
+    src: url('../MEDIA/SignatureDecember.otf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Akira'; /* Choose a name for your font */
+    src: url('../MEDIA/Akira.otf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Chicago'; /* Choose a name for your font */
+    src: url('../MEDIA/Chicago.otf') format('truetype');
+}
+
+
+@font-face {
+    font-family: 'CasualHuman'; /* Choose a name for your font */
+    src: url('../MEDIA/CasualHuman.otf') format('truetype');
+}
+
+
+@font-face {
+    font-family: 'CompactBrush'; /* Choose a name for your font */
+    src: url('../MEDIA/CompactBrush.otf') format('truetype');
+}
+
+@font-face {
+    font-family: 'CompactBrush'; /* Choose a name for your font */
+    src: url('../MEDIA/CompactBrush.ttf') format('truetype');
+}
+
+
+@font-face {
+    font-family: 'Donna'; /* Choose a name for your font */
+    src: url('../MEDIA/Donna.otf') format('truetype');
+}
+
+
+@font-face {
+    font-family: 'Geniga'; /* Choose a name for your font */
+    src: url('../MEDIA/Geniga.otf') format('truetype');
+}
+
+
+@font-face {
+    font-family: 'AmericanSignature'; /* Choose a name for your font */
+    src: url('../MEDIA/AmericanSignature.otf') format('truetype');
+}
+
+@font-face {
+    font-family: 'HighSpirited'; /* Choose a name for your font */
+    src: url('../MEDIA/HighSpirited.ttf') format('truetype');
+}
+
+
+
+
+
+
+.textcentre:hover{
+    font-size: 350%;
+}

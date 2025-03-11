@@ -1,0 +1,193 @@
+html{
+    scroll-behavior: smoooth;
+}
+
+body{
+    background-color:black;
+    display:grid;
+    place-content:center;
+    color:white;
+}
+
+
+.container{
+    width:100vw;
+    height: auto;
+    position:relative;
+    align-items: center;
+    text-align: center;
+    /* border:solid; */
+    overflow:visible;
+    }
+
+    .slide1{
+        width:100%;
+        height:auto;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .backgroundvideo{
+        width:100%;
+        opacity: 0.75;
+        /* border:solid; */
+        position:relative;
+        z-index: -1;
+        }
+
+        .invictus1{
+            /* border:white; */
+            width:100%;
+            position:absolute;
+            height: calc(93% - 15vh);
+            top: 13vh;
+            /* border:solid; */
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            z-index:2;
+        }
+            
+        .stickyimage{
+            position:sticky;
+            top: 40vh;
+            width:50%;
+            
+                }
+
+
+.stickyimage:hover{
+    width:55vw;
+    }
+
+
+.container2{
+    width:100vw;
+    height: auto;
+    position:relative;
+    overflow: hidden;
+    /* border:solid; */
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    }
+
+    .slide2{
+        width:100%;
+        height: auto;
+        align-items: center;
+        justify-content: center;
+        /* border-style: solid;
+        border-color: red; */
+        padding-bottom: 5%;
+    }
+
+
+ .textblock{
+        text-align: center;
+        padding-left: 25vw;
+        padding-right: 25vw;
+        font-size:0.8em;
+        margin-top: 15vh;
+        margin-bottom:15vh;
+        line-height:25px;
+        /* border:solid;
+            border:solid; */
+}
+
+.snakefaq{
+    /* border:white; */
+    width:90%;
+    margin-left:0;
+    margin-right:0;
+    /* border:solid; */
+    
+    }
+
+
+
+
+.snake:hover{
+    width:35%
+    
+}
+
+
+
+.split-screen {
+
+    display: flex;
+        /* border:solid; */
+  
+    /* Use flexbox for easy split layout */
+  
+  }
+  
+  
+  
+  .left-section, .right-section {
+  
+    width: 50%; /* Each section takes 50% of the screen width */
+  
+  }
+  
+  
+  
+  .left-section {
+  
+    /* Optional styling for the left section */
+  
+  }
+  
+  
+  
+  .right-section {
+  
+    /* Optional styling for the right section */
+  
+  }
+
+  .links{
+    text-decoration:none;
+    color:white;
+    font-family: "HelveticaNeueBold";
+    font-size: small;
+    text-align: center;
+    
+
+
+
+  }
+
+  @font-face
+  {
+      font-family: 'HelveticaNeueRegular';
+      src: url('../fonts/HelveticaNeue.eot');
+      src: local('Helvetica Neue Bold'), local('HelveticaNeue'), url('../fonts/HelveticaNeue.woff') format('woff'), url('../fonts/HelveticaNeue.ttf') format('truetype');
+  }
+  
+  @font-face
+  {
+      font-family: 'HelveticaNeueCondensedBold';
+      src: url('../fonts/HelveticaNeue-CondensedBold.eot');
+      src: local('HelveticaNeue-CondensedBold'), local('HelveticaNeue-CondensedBold'), url('../fonts/HelveticaNeue-CondensedBold.woff') format('woff'), url('../fonts/HelveticaNeue-CondensedBold.ttf') format('truetype');
+  }
+
+  @font-face
+  {
+      font-family: 'HelveticaNeueLight';
+      src: url('../fonts/HelveticaNeue-Light.eot');
+      src: local('HelveticaNeue-Light'), local('HelveticaNeue-Light'), url('../fonts/HelveticaNeue-Light.woff') format('woff'), url('../fonts/HelveticaNeue-CondensedBold.ttf') format('truetype');
+  }
+
+  @font-face
+  {
+      font-family: 'HelveticaNeueBold';
+      src: url('../fonts/HelveticaNeue-Bold.eot');
+      src: local('HelveticaNeue-Bold'), local('HelveticaNeue-Bold'), url('../fonts/HelveticaNeue-Bold.woff') format('woff'), url('../fonts/HelveticaNeue-CondensedBold.ttf') format('truetype');
+  }
+
+  .links:hover{
+font-size: medium;
+  }
