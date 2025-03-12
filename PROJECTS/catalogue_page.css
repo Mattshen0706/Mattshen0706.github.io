@@ -39,21 +39,11 @@ overflow:none;
   overflow:none;
 }
 
-.expand1{
-width:100%;
-}
-
 .expand1:hover{
   transform:scale(110%);
-
 }
 
-
-.expand2{
+.expand1{
   width:100%;
-  }
-  
-  .expand2:hover{
-    transform:scale(110%);
-  
-  }
+}
+
