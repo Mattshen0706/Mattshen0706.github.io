@@ -15,12 +15,6 @@ overflow:none;
 background:rgb(232, 232, 232);
 }
 
-.contentleft{
-width:50%;
-justify-content: center;
-text-align: center;
-overflow:none;
-}
 
 .containerright{
   width:50vw;
@@ -31,13 +25,6 @@ overflow:none;
   overflow:none;
   background:rgb(232, 232, 232);
   }
-
-  .contentright{
-  width:50%;
-  justify-content: center;
-  text-align: center;
-  overflow:none;
-}
 
 .expand1:hover{
   transform:scale(110%);

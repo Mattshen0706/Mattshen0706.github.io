@@ -41,24 +41,56 @@ body{
             position:absolute;
             height: calc(93% - 15vh);
             top: 13vh;
-            /* border:solid; */
+            border:solid;
             align-items: center;
             justify-content: center;
             text-align: center;
             z-index:2;
         }
             
+        .shopbutton{
+            width:100%;
+            position:absolute;
+            justify-content: center;
+            align-items:center;
+            text-align:center;
+            z-index:3;
+            height: 96%;
+            top:13vh;
+            border-style:solid;
+        }
+
+
+        .buttonformat{
+            position:sticky;
+            top: 73vh;
+            width:22%;
+            height:40px;
+            font-family: HelveticaNeueBold;
+            color:white;
+            background: none;
+            border: white;
+            border-style: solid;
+
+        }
+
         .stickyimage{
             position:sticky;
             top: 40vh;
             width:50%;
+            padding-bottom: 2vh;
             
                 }
 
 
 .stickyimage:hover{
-    width:55vw;
+   transform:scale(110%);
     }
+
+.buttonformat:hover{
+        background-color: white;
+        color:black; 
+        }
 
 
 .container2{
@@ -169,6 +201,7 @@ width:50%;
       src: url('../fonts/HelveticaNeue-Bold.eot');
       src: local('HelveticaNeue-Bold'), local('HelveticaNeue-Bold'), url('../fonts/HelveticaNeue-Bold.woff') format('woff'), url('../fonts/HelveticaNeue-CondensedBold.ttf') format('truetype');
   }
+
 
   .links:hover{
 font-size: medium;
