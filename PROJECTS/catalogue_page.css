@@ -47,3 +47,39 @@ overflow:none;
   width:100%;
 }
 
+.image-hover {
+  width: 100vw; /* Specify the width */
+  height: 200px; /* Specify the height */
+  position:relative;
+  background-image: url('https://www.dropbox.com/scl/fi/88pak2cjivrfzyv59474c/acidwashoodiefront.png?rlkey=wvvsuzmwhimz7jbqj2aaoir6n&st=y7pes1ir&raw=1'); /* Initial background image */
+  background-size: cover; /* Cover the entire area of the element */
+  transition: background-image 0.5s ease-in-out; /* Smooth transition */
+}
+
+.image-hover:hover {
+  background-image: url('https://www.dropbox.com/scl/fi/ygs4yyx0gd6fsrjejbymo/blackhoodiefront.png?rlkey=dys5bkndbk7yg9ft1zkhlrjik&st=v2ube1lu&raw=1'); /* Change on hover */
+}
+
+
+.PHOTO1{
+display:block;
+width:100%;
+
+}
+
+.PHOTO2{
+display:none;
+width:100%
+}
+
+.block1:hover{
+.PHOTO1{
+  display:none;
+}
+.PHOTO2{
+  display:block;
+}
+}
+
+
+

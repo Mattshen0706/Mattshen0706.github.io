@@ -31,7 +31,6 @@ body{
     .backgroundvideo{
         width:100%;
         opacity: 0.75;
-        /* border:solid; */
         position:relative;
         z-index: -1;
         }
@@ -98,7 +97,7 @@ body{
 
 .snakefaq{
     /* border:white; */
-    width:90%;
+    width:60%;
     margin-left:0;
     margin-right:0;
     /* border:solid; */
@@ -114,39 +113,22 @@ body{
 }
 
 
+.container3{
+    width:100vw;
+    height:auto;
+    position:relative;
+    display:block;
+    overflow:auto;
+    white-space: nowrap; 
+}
 
-.split-screen {
+.block1{
+position:relative;
+display:inline-block;
+width:50%;
 
-    display: flex;
-        /* border:solid; */
-  
-    /* Use flexbox for easy split layout */
-  
-  }
-  
-  
-  
-  .left-section, .right-section {
-  
-    width: 50%; /* Each section takes 50% of the screen width */
-  
-  }
-  
-  
-  
-  .left-section {
-  
-    /* Optional styling for the left section */
-  
-  }
-  
-  
-  
-  .right-section {
-  
-    /* Optional styling for the right section */
-  
-  }
+}
+
 
   .links{
     text-decoration:none;
@@ -191,3 +173,25 @@ body{
   .links:hover{
 font-size: medium;
   }
+
+
+  .PHOTO1{
+    display:block;
+    width:100%;
+    
+    }
+    
+    .PHOTO2{
+    display:none;
+    width:100%
+    }
+    
+    .block1:hover{
+    .PHOTO1{
+      display:none;
+    }
+    .PHOTO2{
+      display:block;
+    }
+    }
+
