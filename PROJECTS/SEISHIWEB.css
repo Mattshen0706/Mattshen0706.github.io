@@ -41,7 +41,7 @@ body{
             position:absolute;
             height: calc(93% - 15vh);
             top: 13vh;
-            border:solid;
+            /* border:solid; */
             align-items: center;
             justify-content: center;
             text-align: center;
@@ -57,7 +57,7 @@ body{
             z-index:3;
             height: 96%;
             top:13vh;
-            border-style:solid;
+            /* border-style:solid; */
         }
 
 
@@ -84,7 +84,7 @@ body{
 
 
 .stickyimage:hover{
-   transform:scale(110%);
+   width:55%;
     }
 
 .buttonformat:hover{
@@ -169,8 +169,6 @@ width:50%;
     font-size: small;
     text-align: center;
     
-
-
 
   }
 
