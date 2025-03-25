@@ -241,6 +241,6 @@ h1{
 
 @keyframes slideshowannimation{
     from{transform:translate(0,0)}
-    to{transform:translate(-30vw,0)}
+    to{transform:translate(-25vw,0)}
 
 }

@@ -1,19 +1,13 @@
-function FadeInSection(props) {
-    const [isVisible, setVisible] = React.useState(true);
-    const domRef = React.useRef();
-    React.useEffect(() => {
-      const observer = new IntersectionObserver(entries => {
-        entries.forEach(entry => setVisible(entry.isIntersecting));
-      });
-      observer.observe(domRef.current);
-      return () => observer.unobserve(domRef.current);
-    }, []);
-    return (
-      <div
-        className={`fadeinphoto ${isVisible ? 'is-visible' : ''}`}
-        ref={domRef}
-      >
-        {props.children}
-      </div>
-    );
-  }
+const observer = new IntersectionObserver((entries)=>{
+    entries.forEach((entry) => {
+        console.log(entry)
+        if (entry.isIntersecting){
+            entry.target.classList.add('show');
+        } else{
+            entry.target.classList.remove('show');
+        }
+    });
+});
+
+const hiddenElements=document.querySelectorAll('.transform1, .transform2, .transform3');
+hiddenElements.forEach((el)=> observer.observe(el));
