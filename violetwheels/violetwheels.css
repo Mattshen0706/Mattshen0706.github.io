@@ -85,7 +85,7 @@ border-color: black; */
 
 .container2{
     margin-top:10vh;
-    height:120vh;
+    height:100vh;
     width:100vw;
     color: black;
     display:flex;
@@ -127,7 +127,7 @@ border-color: black; */
     position:absolute;
     left:0;
     font-weight: bold;
-    font-size: 1em;
+    font-size: 2em;
     font-family: Arial, Helvetica, sans-serif;
     width:fit-content;
     top:23vh;
@@ -140,7 +140,7 @@ border-color: black; */
     position:absolute;
     right:0;
     font-weight: bold;
-    font-size: 1em;
+    font-size: 2em;
     font-family: Arial, Helvetica, sans-serif;
     width:fit-content;
     top:23vh;
@@ -180,14 +180,29 @@ h1{
     display: flex;
     position: relative;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 1em;
+    font-size: 2em;
     font-weight: lighter;
     text-align: center;
     justify-content: center;
     padding-top: 7%;
-    line-height: 20px;
-    margin-bottom: 20%;
+    line-height: 40px;
+    margin-bottom: 10%;
 }
+
+.subtext{
+    width:60%;
+    display: flex;
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+    font-weight: lighter;
+    text-align: center;
+    justify-content: center;
+    padding-top: 7%;
+    line-height: 40px;
+    margin-bottom: 10%;
+}
+
 
 .firstletter{
     font-size:12vh;
@@ -195,8 +210,66 @@ h1{
 }
 
 
+.horizontal_slider{
+    width: 100vw;
+    height:100%;
+    position:relative;
+    color: white;
+    overflow-x:auto;
+white-space: nowrap; 
+scrollbar-width: none;
+margin-bottom:3%;
+}
 
+.slidephoto1{
+    max-height: 100%;
+    max-width:auto;
+    white-space: nowrap; 
+    display:inline-block;
+    /* border-color: rgb(255, 0, 0);
+    border-style: solid;  */
+    position:relative;
+    text-align: center; 
+    justify-content: center;
+    word-wrap: break-word;
+    overflow-x:hidden;
+    }
 
+.slidephoto{
+    height:auto;
+    width:20vw;
+    padding-left:2vh;
+    padding-right:2vh;
+    margin-top:2vh;
+    margin-left:6vh;
+    margin-right:6vh;
+    margin-bottom:2vh;
+    background-color: white;
+    object-fit: cover;
+}
+
+.splitscreen{
+    width:100%;
+    height:auto;
+    display:flex;
+    position:relative;
+    padding-left:5%;
+    padding-right:5%;
+    gap: 1%;
+    justify-content: space-evenly;
+}
+
+.leftsplit{
+   display:flex;
+   flex-direction: row;
+
+}
+
+.rightsplit{
+    display:flex;
+    flex-direction: row;
+    
+}
 
 
 
@@ -241,6 +314,6 @@ h1{
 
 @keyframes slideshowannimation{
     from{transform:translate(0,0)}
-    to{transform:translate(-25vw,0)}
+    to{transform:translate(-10vw,0)}
 
 }
