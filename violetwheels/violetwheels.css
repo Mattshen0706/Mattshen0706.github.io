@@ -249,6 +249,32 @@ h1{
     margin-bottom: 10%;
 }
 
+.paragraph2{
+    width:30%;
+    display: flex;
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    font-weight: lighter;
+    text-align: center;
+    justify-content: center;
+    line-height: 55px;
+}
+
+.paragraph3{
+    width:70%;
+    display: flex;
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    font-weight: lighter;
+    text-align: center;
+    justify-content: center;
+    line-height: 55px;
+    margin-bottom: 10%;
+}
+
+
 .subtext{
     width:60%;
     display: flex;
