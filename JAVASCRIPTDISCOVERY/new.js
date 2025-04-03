@@ -8,12 +8,12 @@ speed2=1;
 positionX=0;
 positionY=0;
 
-document.getElementById("practice").innerHTML = "HELLO, my name is" + name + " I am " + age + " years old"
+// document.getElementById("practice").innerHTML = "HELLO, my name is" + name + " I am " + age + " years old"
 
 // var myVariable = "Hello, world!";
 // document.getElementById("output").textContent = myVariable;
 
-const button = document.getElementById("alertButton");
+// const button = document.getElementById("alertButton");
 button.addEventListener('click',function(){
     alert("BUTTON CLICKED");
 });
@@ -47,11 +47,7 @@ annimationbutton.addEventListener('mouseout',function(){
 
         for(let i=0;i<window.innerWidth;i++){
         positionX-=speed;
-        if(positionY>=200){
-            positionY-=speed;
-        }else{
-            positionY=positionY;
-        }
+        positionY-=speed;
         bluedot.style.left = positionX +'px';
         bluedot.style.top = positionY +'px';
     }

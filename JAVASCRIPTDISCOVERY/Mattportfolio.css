@@ -1,0 +1,39 @@
+head{
+    margin:0;
+    padding:0; 
+}
+body{
+    margin:0;
+    padding:0;
+}
+
+.container{
+    position:absolute;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width:100vw;
+    height:100vh;
+    overflow:visible;
+    flex:auto;
+}
+
+/* #circle1{
+    display:inline-block;
+    width: 100px;
+    height:100px;
+    background-color: rgb(255, 0, 0);
+    border-radius: 50%;
+    z-index: 1;
+    opacity:1;
+} */
+
+#circle2{
+    display:inline-block;
+    width:90px;
+    height:90px;
+    background-color: rgb(255, 0, 0);
+    border-radius: 50%;
+    z-index: 2;
+    opacity:1;
+}
