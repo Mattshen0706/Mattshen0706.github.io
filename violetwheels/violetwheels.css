@@ -364,40 +364,46 @@ margin-bottom:3%;
     position:relative;
     display:flex;
     flex-direction: row-reverse;
-
+    justify-content: center;
+    align-items: center;
 }
 
 .leftsplitabs{
     position: relative;
     display: flex;
+    flex-wrap: wrap;
     width:20%;
     margin-left:5%;
     margin-right:5%;
     margin-bottom:5%;
+    height:fit-content;
+    align-content: center;
     justify-content: flex-end;
  }
 
  .middlesplitabs{
     position: relative;
     display: flex;
+    flex-wrap: wrap;
     width:50%;
-    margin-right:5%;
-    margin-left:5%;
     margin-bottom:5%;
     justify-content: center;
     align-items: center;
+    height:auto;
+    overflow-y:auto;
  }
  
  .rightsplitabs{
     position: relative;
     display: flex;
+    flex-wrap: wrap;
     width:10%;
-    height:10%;
     margin-left:5%;
     margin-right:5%;
     margin-top:15%;
     margin-bottom:5%;
     justify-content: flex-end;
+    height:auto;
 
  }
 
