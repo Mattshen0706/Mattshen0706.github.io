@@ -346,10 +346,28 @@ margin-bottom:3%;
     transition:0.5s;
 }
 
+
+.slidephoto3{
+    height:auto;
+    width:18vw;
+    padding-left:2vh;
+    padding-right:2vh;
+    margin-left:2vh;
+    margin-bottom:2vh;
+    background-color: white;
+    object-fit: cover;
+    transition:0.5s;
+}
+
+
 .slidephoto2:hover{
     width:12vw
 }
 
+
+.slidephoto3:hover{
+    width:20vw
+}
 
 .splitscreen{
     width:100%;
@@ -444,6 +462,17 @@ margin-bottom:3%;
     align-content: center;
     justify-content: flex-end;
  }
+
+ .leftsplitabs1scroll{
+    position: relative;
+    width:40%;
+    margin-right:5%;
+    margin-bottom:5%;
+    overflow-x:auto;
+    white-space: nowrap; 
+    scrollbar-width: none;
+ }
+
 
  .middlesplitabs1{
     position: relative;
