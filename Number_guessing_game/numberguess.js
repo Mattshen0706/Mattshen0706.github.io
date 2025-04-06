@@ -51,10 +51,3 @@ function displayguess(){
     }
 };
 
-
-
-// getElementById('dispuserguess').innerHTML="Your guess is" + xval
-
-
-
-
