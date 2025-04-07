@@ -6,8 +6,6 @@ var currentnumber=0
 var operator=0
 var currentoperation=""
 
-
-
 const button1 = document.getElementById('warningmessage');
 
 button1.addEventListener('click',function(){
@@ -111,7 +109,36 @@ lighttext.addEventListener('click', function(){
 
 
 
+const powerone = document.getElementById('power1');
+const powertwo = document.getElementById('power2');
+const powerthree = document.getElementById('power3');
+const powerfour = document.getElementById('power4');
+const powerfive = document.getElementById('power5');
+const powersix = document.getElementById('power6');
+const powerseven = document.getElementById('power7');
+const powereight = document.getElementById('power8');
+const powernine = document.getElementById('power9');
+const powerten = document.getElementById('power10');
+const powereleven = document.getElementById('power11');
+const powertwelve = document.getElementById('power12');
+const powerthirteen = document.getElementById('power13');
+const powerforteenth = document.getElementById('power14');
+const powerfifteen= document.getElementById('power15');
+const powersixteen= document.getElementById('power16');
 
+
+const powersof =[powertwo,powerthree,powerfour,powerfive,powersix,powerseven,powereight,powernine,powerten,powereleven,powertwelve,powerthirteen,powerforteenth,powerfifteen,powersixteen]
+
+var currentpower=2
+
+powerone.addEventListener('keyup',function(){
+    let powerval=powerone.value;
+    for (let i = 0; i < powersof.length; i++){
+        powersof[i].innerHTML=powerval**currentpower
+        currentpower+=1;
+    };
+    currentpower=2
+});
 
 
 
