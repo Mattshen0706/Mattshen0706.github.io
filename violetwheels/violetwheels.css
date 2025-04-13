@@ -187,7 +187,7 @@ border-color: black; */
     position:absolute;
     left:0;
     font-weight: bold;
-    font-size: 27px;
+    font-size: 28px;
     font-family: Arial, Helvetica, sans-serif;
     width:fit-content;
     top:23vh;
@@ -200,7 +200,7 @@ border-color: black; */
     position:absolute;
     right:0;
     font-weight: bold;
-    font-size: 27px;
+    font-size: 28px;
     font-family: Arial, Helvetica, sans-serif;
     width:fit-content;
     top:23vh;
@@ -240,13 +240,14 @@ h1{
     display: flex;
     position: relative;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 22px;
+    font-size: 45px;
     font-weight: lighter;
     text-align: center;
     justify-content: center;
     padding-top: 7%;
-    line-height: 55px;
+    line-height: 80px;
     margin-bottom: 10%;
+    text-align: left;
 }
 
 .paragraph2{
@@ -254,11 +255,11 @@ h1{
     display: flex;
     position: relative;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 22px;
+    font-size: 45px;
     font-weight: lighter;
     text-align: center;
     justify-content: center;
-    line-height: 55px;
+    line-height: 80px;
 }
 
 .paragraph3{
@@ -266,11 +267,11 @@ h1{
     display: flex;
     position: relative;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 22px;
+    font-size: 45px;
     font-weight: lighter;
     text-align: center;
     justify-content: center;
-    line-height: 55px;
+    line-height: 80px;
     margin-bottom: 10%;
 }
 
@@ -359,6 +360,18 @@ margin-bottom:3%;
     transition:0.5s;
 }
 
+.slidephoto4{
+    height:auto;
+    width:21vw;
+    padding-left:2vh;
+    padding-right:2vh;
+    margin-left:2vh;
+    margin-bottom:2vh;
+    background-color: white;
+    object-fit: cover;
+    transition:0.5s;
+}
+
 
 .slidephoto2:hover{
     width:12vw
@@ -368,6 +381,10 @@ margin-bottom:3%;
 .slidephoto3:hover{
     width:20vw
 }
+.slidephoto4:hover{
+    width:23vw
+}
+
 
 .splitscreen{
     width:100%;
