@@ -241,12 +241,12 @@ h1{
     flex-direction: column;
     position: relative;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 45px;
+    font-size: 30px;
     font-weight: lighter;
     text-align: center;
     justify-content: center;
     padding-top: 7%;
-    line-height: 80px;
+    line-height: 60px;
     margin-bottom: 10%;
     text-align: left;
 }
@@ -256,11 +256,11 @@ h1{
     display: flex;
     position: relative;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 45px;
+    font-size: 30px;
     font-weight: lighter;
     text-align: center;
     justify-content: center;
-    line-height: 80px;
+    line-height: 60px;
 }
 
 .paragraph3{
@@ -268,11 +268,11 @@ h1{
     display: flex;
     position: relative;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 45px;
+    font-size: 30px;
     font-weight: lighter;
     text-align: center;
     justify-content: center;
-    line-height: 80px;
+    line-height: 60px;
     margin-bottom: 10%;
 }
 
@@ -503,10 +503,6 @@ margin-bottom:3%;
     height:auto;
     overflow-y:auto;
  }
-
-
-
-
 
 
 
