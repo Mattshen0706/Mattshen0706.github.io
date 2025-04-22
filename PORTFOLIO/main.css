@@ -1,0 +1,116 @@
+*{
+    margin:0;
+    padding:0;
+box-sizing:border-box;
+}
+
+body{  
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background:rgb(255, 255, 255);
+    overflow-x:hidden;
+}
+
+.container{
+    position:relative;
+    display:flex;
+    width:100vw;
+
+}
+
+.containerlarge{
+    width:100vw;
+    height:30vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.menubar{
+position:absolute;
+left:30vw;
+top:0;
+display:flex;
+width:40vw;
+height:25vh;
+justify-content: space-around;
+align-items: center;
+text-align: center;
+}
+.row{
+    flex-direction: row;
+    justify-content: space-between;
+    width:100%;
+    
+}
+.container .item
+{
+    position:absolute;
+    width:30vw;
+    height:30vw;
+    /* background: white; */
+    top:-15vw;
+    left:35vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+    z-index:3;
+    opacity:0;
+    transition:0.1s;
+    transform-origin: center;
+}
+
+.container .item:nth-child(1)
+{
+    transform:translate3d(-50vw,10vh,0) scale(0.5);
+    /* background: red; */
+    z-index: 1;
+    opacity:0.7;
+    transform-origin: center;
+}
+
+.container .item:nth-child(2)
+{
+    transform:translate3d(-25vw,5vh,0) scale(0.75);
+    /* background: blue; */
+    z-index: 2;
+    opacity:0.4;
+    transform-origin: center;
+}
+
+.container .item:nth-child(3)
+{
+    transform:translate3d(0vw,0,0) scale(1);
+    /* background: rgb(255, 255, 255); */
+    z-index: 3;
+    opacity:1;
+    transform-origin: center;
+}
+
+.container .item:nth-child(4)
+{
+    transform:translate3d(25vw,5vh,0) scale(0.75);
+    /* background: rgb(12, 202, 88); */
+    z-index: 2;
+    opacity:0.7;
+    transform-origin: center;
+}
+
+
+.container .item:nth-child(5)
+{
+    transform:translate3d(50vw,10vh,0) scale(0.5);
+    /* background: rgb(110, 108, 236); */
+    z-index: 1;
+    opacity:0.4;
+    transform-origin: center;
+}
+
+h{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1vh;
+    font-weight: bolder;
+}
+
