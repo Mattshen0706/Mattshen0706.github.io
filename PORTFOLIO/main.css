@@ -96,6 +96,28 @@ color:black;
 transition:1s;
 }
 
+.lightcontainer{
+    position:absolute;
+    width:100vw;
+    height:20vh;
+    top:75vh;
+    z-index: 20;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color:black;
+    display: flex;
+}
+
+.light{
+    width:30%;
+    height:50%;
+    border-radius: 50%;
+    z-index: 20;
+    color:rgb(255, 255, 255);
+    transition:1s;
+
+}
 
 .overlay{
     background: rgb(255, 255, 255);
@@ -264,55 +286,76 @@ transform:translate3d(-25vw,0,0) scale(1.1);
     display:flex;
     justify-content: center;
     align-items: center;
-    visibility:collapse;
+    visibility:hidden;
     z-index: 5;
+    transform:scaleY(-1);
 
 }
 
 .dot {
     position:absolute;
-    width:10vw;
-    height:10vw;
-    background: red;
+    width:12vw;
+    height:12vw;
     border-radius: 10vw;
-    right:-5vw;
-    top:-5vw;
+    right:0vw;
+    top:calc(-5vw+50vh);
     opacity:0;
-    transition:1s;
+    background-size: cover;  
+    background-position: center;  
+    background-repeat: no-repeat;
+    transition:1s ease-in-out;
 }
 
-.dot.annimation{
-    animation-name:sphererotate;
-    animation-duration:1s;
-    animation-fill-mode: forwards;
-}
+/* 
+.container3 .dot:nth-child(1) {
+    background: blue;
+  }
+  
+  .container3 .dot:nth-child(2) {
+    background: rgb(255, 0, 0);
+  }
+  
+  .container3 .dot:nth-child(3) {
+    background: rgb(145, 255, 0);
+  }
+  
+  .container3 .dot:nth-child(4) {
+    background: rgb(255, 0, 217);
+  }
+  
+  .container3 .dot:nth-child(5) {
+    background: rgb(255, 0, 217);
+  }
+   */
 
-
-@keyframes sphererotate{
-    0% {
-        right:-5vw;
-        top:-5vh;
-      } 
-    25% {
-        right:10vw;
-        top:20vh;
-      } 
-    50% {
-        right:25vw;
-        top:45vh;
-      } 
-    75% {
-        right:10vw;
-        top:70vh;
-      } 
-      100% {
-        right:-5vw;
-        top:95vh;
-      } 
-
-}
 
 #infinitescroll{
     background:rgba(255,255,255,0);
     transition:1s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.audiobutton{
+    position:absolute;
+    margin-top:10vh;
+    color: white;
+    background: black;
+    padding: 2vw;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 1vw;
+    font-size: 2vw;
+    font-weight: bolder;
 }
