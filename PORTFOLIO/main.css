@@ -24,6 +24,7 @@ body{
     width:100vw;
     margin-top: 50vh;
     height:70vh;
+    transition:1s;
 
 }
 
@@ -253,6 +254,7 @@ transition:2s
     width:100vw;
     height:100vh;
     border-radius: 0;
+    z-index:100;
   }
 
   .multitext:hover{
@@ -280,57 +282,98 @@ transform:translate3d(-25vw,0,0) scale(1.1);
 
 .container3{
     position:absolute;
-    top:0;
+    top:-40vh;
+    right:-23vw;
     width:100vw;
     height:100vh;
-    display:flex;
+    display:block;
     justify-content: center;
     align-items: center;
     visibility:hidden;
     z-index: 5;
-
+    transform: scaleY(-1);
 }
 
 .container4{
     position:absolute;
-    top:0;
+    top:-40vh;
+    right:-23vw;
     width:100vw;
     height:100vh;
-    display:flex;
+    display:block;
     justify-content: center;
     align-items: center;
     visibility:hidden;
     z-index: 5;
+    transform: scaleY(-1);
 
 }
 
 .container5{
     position:absolute;
-    top:0;
+    top:-40vh;
+    right:-23vw;
     width:100vw;
     height:100vh;
-    display:flex;
+    display:block;
     justify-content: center;
     align-items: center;
     visibility:hidden;
     z-index: 5;
+    transform: scaleY(-1);
 
 }
 
 .container6{
     position:absolute;
-    top:0;
+    top:-40vh;
+    right:-23vw;
     width:100vw;
     height:100vh;
-    display:flex;
+    display:block;
     justify-content: center;
     align-items: center;
     visibility:hidden;
     z-index: 5;
+    transform: scaleY(-1);
 
 }
 
-.photo{
+.container7{
+    position:absolute;
+    top:-40vh;
+    right:-23vw;
+    width:100vw;
+    height:100vh;
+    display:block;
+    justify-content: center;
+    align-items: center;
+    visibility:hidden;
+    z-index: 5;
+    transform: scaleY(-1);
+    
+
+}
+
+.lastel{
+    display:flex; 
+    justify-content:center; 
+    align-items: center; 
+    text-align:center;
+    background:rgb(0, 0, 0);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    font-size:200px;
+    color:white;
+
+}
+
+
+
+
+
+
+.dot{
     position:absolute;
     width:12vw;
     height:12vw;
@@ -341,96 +384,21 @@ transform:translate3d(-25vw,0,0) scale(1.1);
     background-size: cover;  
     background-position: center;  
     background-repeat: no-repeat;
-    transition:1s ease-in-out;
+    transition:0.8s ease-in-out;
     transition: width height 0.8s;
-}
-
-
-.fashion{
-    position:absolute;
-    width:12vw;
-    height:12vw;
-    border-radius: 10vw;
-    right:0vw;
-    top:calc(-5vw+50vh);
-    opacity:0;
-    background-size: cover;  
-    background-position: center;  
-    background-repeat: no-repeat;
-    transition:1s ease-in-out;
-    transition: width height 0.8s;
+    border: 4px solid #ffffff;
+    box-shadow:
+    inset 0 0 0 4px #f8f8f8,
+    inset 0 0 0 8px #e6e6e6,
+    inset 0 0 0 12px #d2d1d1,
+    inset 0 0 0 16px #c6c6c6,
+    inset 0 0 0 20px #b8b8b8,
+    inset 0 0 0 20px #a9a9a9,
+    inset 0 0 0 20px #9e9e9e;
 }
 
 
 
-
-.athlete{
-    position:absolute;
-    width:12vw;
-    height:12vw;
-    border-radius: 10vw;
-    right:0vw;
-    top:calc(-5vw+50vh);
-    opacity:0;
-    background-size: cover;  
-    background-position: center;  
-    background-repeat: no-repeat;
-    transition:1s ease-in-out;
-    transition: width height 0.8s;
-}
-
-
-.graphic{
-    position:absolute;
-    width:12vw;
-    height:12vw;
-    border-radius: 10vw;
-    right:0vw;
-    top:calc(-5vw+50vh);
-    opacity:0;
-    background-size: cover;  
-    background-position: center;  
-    background-repeat: no-repeat;
-    transition:1s ease-in-out;
-    transition: width height 0.8s;
-}
-
-.chef{
-    position:absolute;
-    width:12vw;
-    height:12vw;
-    border-radius: 10vw;
-    right:0vw;
-    top:calc(-5vw+50vh);
-    opacity:0;
-    background-size: cover;  
-    background-position: center;  
-    background-repeat: no-repeat;
-    transition:1s ease-in-out;
-    transition: width height 0.8s;
-}
-
-/* 
-.container3 .dot:nth-child(1) {
-    background: blue;
-  }
-  
-  .container3 .dot:nth-child(2) {
-    background: rgb(255, 0, 0);
-  }
-  
-  .container3 .dot:nth-child(3) {
-    background: rgb(145, 255, 0);
-  }
-  
-  .container3 .dot:nth-child(4) {
-    background: rgb(255, 0, 217);
-  }
-  
-  .container3 .dot:nth-child(5) {
-    background: rgb(255, 0, 217);
-  }
-   */
 
 
 #infinitescroll{

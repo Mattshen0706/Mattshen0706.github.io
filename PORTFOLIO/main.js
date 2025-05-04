@@ -39,9 +39,9 @@ const sensitivity = 0.01; // Adjust this value to change sensitivity
 const section=document.querySelector(".infinitescroll")
 const container2=document.querySelector(".container2")
 
-window.addEventListener('keydown', function(e) {
-  if (e.keyCode === 32 && e.target === document.body) {
-    e.preventDefault();
+document.addEventListener('keydown', function(event) {
+  if (event.key === "ArrowUp" || event.key === "ArrowDown") {
+    event.preventDefault();
   }
 });
 
@@ -79,12 +79,12 @@ container.appendChild(photo5)
 // }
 
 
-function appendNext(){
+function appendNext1(){
     let items = document.querySelectorAll('.item');
         container.appendChild(items[0]);
 }
 
-function appendPrev(){
+function appendPrev1(){
     let items = document.querySelectorAll('.item');
         container.prepend(items[items.length-1]);
 }
@@ -106,12 +106,12 @@ let functionEnabled = true;
       if (functionEnabled === true){
         if (event.key === 'a') {
           // Call your function here
-          appendPrev();
+          appendPrev1();
         }
 
         if (event.key === 'd') {
           // Call your function here
-          appendNext();
+          appendNext1();
         }
       }
       });
@@ -242,6 +242,16 @@ const athletecircle = document.querySelector('.container6');
 const fashioncircle = document.querySelector('.container7');
 
 
+const overlay=document.getElementById("overlay")
+
+let myDictionary={}
+
+myDictionary["photo1"] = ".container3"
+myDictionary["photo2"] = ".container4"
+myDictionary["photo3"] = ".container5"
+myDictionary["photo4"] = ".container6"
+myDictionary["photo5"] = ".container7"
+
 
 const photos = document.querySelectorAll('.photo'); // creates a list
 
@@ -277,91 +287,60 @@ fashions.forEach(fashion => {
 
 
 
-function appendNextPhoto(){
-    const photos = photocircle.children;
-    photocircle.appendChild(photos[0]);
+function appendNext(){
+  const middleelement = document.querySelector('.container .item:nth-child(3)');  
+  const targetElementId = myDictionary[middleelement.id];
+  const targetElement = document.querySelector(targetElementId);
+  const items = targetElement.children;
+  targetElement.appendChild(items[0]);
 }
 
-function appendPrevPhoto(){
-    const photos = photocircle.children;
-    photocircle.prepend(photos[photos.length-1]);
-}
-
-function appendNextChef(){
-    const chefs = chefcircle.children;
-    chefcircle.appendChild(chefs[0]);
-}
-
-function appendPrevChef(){
-  const chefs = chefcircle.children;
-  chefcircle.prepend(chefs[chefs.length-1]);
-}
-
-function appendNextGraphic(){
-  const graphics = graphiccircle.children;
-    graphiccircle.appendChild(graphics[0]);
-}
-
-function appendPrevGraphic(){
-  const graphics = graphiccircle.children;
-  graphiccircle.prepend(graphics[graphics.length-1]);
+function appendPrev(){
+  const middleelement = document.querySelector('.container .item:nth-child(3)');  
+  const targetElementId = myDictionary[middleelement.id];
+  const targetElement = document.querySelector(targetElementId);
+  const items = targetElement.children; 
+  targetElement.prepend(items[items.length-1]);
 }
 
 
-function appendNextAthlete(){
-  const athletes = athletecircle.children;
-    athletecircle.appendChild(athletes[0]);
-}
-
-function appendPrevAthlete(){
-  const athletes = athletecircle.children;
-  athletecircle.prepend(athletes[athletes.length-1]);
-}
-
-function appendNextFashion(){
-  const fashions = fashioncircle.children;
-    fashioncircle.appendChild(fashions[0]);
-}
-
-function appendPrevFashion(){
-  const fashions = fashioncircle.children;
-  fashioncircle.prepend(fashions[fashions.length-1]);
-}
-
-
-
+let circlemovement="True"
 
 
 document.addEventListener('keydown', function(event) {
 
   const middleelement = document.querySelector('.container .item:nth-child(3)');  
-
-  if (event.key === 'j') {
+  const targetElementId = myDictionary[middleelement.id];
+  const targetElement = document.querySelector(targetElementId);
+  if (functionEnabled === false){
+  if (circlemovement==="True"){
+  if (event.key === 'a') {
     // Call your function here
-    appendPrevDot();
-    for (let i = 0; i < 9; i++) {
-      const dotss = mediacircle.children[i];
-    if (dotss) {
-      const targetAngle = -i * 40;
-      dotss.style.transform =`rotate(${targetAngle}deg) translateX(65vh)` ; 
-      dotss.style.opacity = '1'; // Make dot visible
-    }
-  }
+    appendNext();
+    for (let i = 0; i < 12; i++) {
+      const items = targetElement.children[i];
+      if (items) {
+        const targetAngle = -i * 40;
+        items.style.transform =`rotate(${targetAngle}deg) translateX(65vh)`; 
+        items.style.opacity = '1'; //
+      }
 }
+  }
 
-if (event.key === 'l') {
+if (event.key === 'd') {
   // Call your function here
-  appendNextDot();
-  for (let i = 0; i < 9; i++) {
-  const dotss = mediacircle.children[i];
-  if (dotss) {
-    const targetAngle = -i * 40;
-    dotss.style.transform =`rotate(${targetAngle}deg) translateX(65vh)`; 
-    dotss.style.opacity = '1'; // Make dot visible
+  appendPrev();
+  for (let i = 0; i < 12; i++) {
+    const items = targetElement.children[i];
+    if (items) {
+      const targetAngle = -i * 40;
+      items.style.transform =`rotate(${targetAngle}deg) translateX(65vh)`; 
+      items.style.opacity = '1'; //
   }
 }
-  }
-
+}
+}
+}
 });
 
 
@@ -414,35 +393,22 @@ else{
 
 
 
-
-
-
-
-
-
-
-
-const overlay=document.getElementById("overlay")
-
-let myDictionary={}
-
-myDictionary["photo1"] = "photocircle"
-myDictionary["photo2"] = "chefcircle"
-myDictionary["photo3"] = "graphiccircle"
-myDictionary["photo4"] = "athletecircle"
-myDictionary["photo5"] = "fashioncircle"
-
-
 document.addEventListener('keydown', function(event){
-  const middleelement = document.querySelector('.container .item:nth-child(3)');  
-  console.log('Key pressed:', event.key);
-  console.log('middleelement.id:', middleelement.id);
+
   if (event.key === 'w') {  
+  const middleelement = document.querySelector('.container .item:nth-child(3)');  
+  console.log('middleelement:', middleelement);
+  console.log('middleelement.id:', middleelement.id);
+  console.log('Key pressed:', event.key);
   console.log(middleelement);
   functionEnabled = false;
   overlay.style.visibility = 'visible';
   overlay.style.opacity = '1';
   middleelement.classList.add("annimate");
+  container2.style.visibility="hidden"
+  container2.style.height="0"
+  container2.style.width="0"
+  container.style.height="60vh"
   if (darkmodestate === true){
   light.style.background="none"
   light.style.boxShadow= "none"
@@ -452,117 +418,144 @@ document.addEventListener('keydown', function(event){
 else{
   overlay.style.background = "white";
 }
-console.log("middleelement.id:", middleelement.id);
 const targetElementId = myDictionary[middleelement.id];
-const targetElement = document.getElementById(targetElementId);
-console.log(targetElement)
+const targetElement = document.querySelector(targetElementId);
+console.log('targetElementId',targetElementId)
+console.log('targetElement',targetElement)
 targetElement.style.visibility="visible"
   for (let i = 0; i < 12; i++) {
     const items = targetElement.children[i];
-    if (items) {
+    items.classList.add('movement')
+    if (items.classList.contains("movement")) {
       const targetAngle = -i * 40;
+      items.style.right="25vw";
       items.style.transform =`rotate(${targetAngle}deg) translateX(65vh)`; 
       items.style.opacity = '1'; //
+    }
+    else{
+      items.style.right="0";
+      items.style.transform =`rotate(0deg) translateX(0vh)`; 
+      items.style.opacity = '1'; 
+
     }
   }
 }
 
-  // if (middleelement.id === 'photo2')
-  //   chefcircle.style.visibility="visible"
-  //   for (let i = 0; i < 12; i++) {
-  //     const chefs = chefcircle.children[i];
-  //     if (chefs) {
-  //       const targetAngle = -i * 40;
-  //       chefs.style.transform =`rotate(${targetAngle}deg) translateX(65vh)`; 
-  //       chefs.style.opacity = '1'; // Make dot visible
-  //     }
-  //   }
-      
-  //   }
-
-  //   if (middleelement.id === 'photo3'){
-  //     graphiccircle.style.visibility="visible"
-  //     for (let i = 0; i < 12; i++) {
-  //       const graphics = graphiccircle.children[i];
-  //       if (graphics) {
-  //         const targetAngle = -i * 40;
-  //         graphics.style.transform =`rotate(${targetAngle}deg) translateX(65vh)`; 
-  //         graphics.style.opacity = '1'; // Make dot visible
-  //       }
-  //     }
-        
-  //     }
-
-  //     if (middleelement.id === 'photo4'){
-  //         athletecircle.style.visibility="visible"
-  //         for (let i = 0; i < 12; i++) {
-  //           const athletes = athletecircle.children[i];
-  //           if (athletes) {
-  //             const targetAngle = -i * 40;
-  //             athletes.style.transform =`rotate(${targetAngle}deg) translateX(65vh)`; 
-  //             athletes.style.opacity = '1'; // Make dot visible
-  //           }
-  //         }
-            
-  //         }
-
-
-  //         if (middleelement.id === 'photo5'){
-  //       fashioncircle.style.visibility="visible"
-  //       for (let i = 0; i < 12; i++) {
-  //         const fashions = fashioncircle.children[i];
-  //         if (fashions) {
-  //           const targetAngle = -i * 40;
-  //           fashions.style.transform =`rotate(${targetAngle}deg) translateX(65vh)`; 
-  //           fashions.style.opacity = '1'; // Make dot visible
-  //         }
-  //       }
-          
-  //       }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 if (event.key === 's') {
+  const middleelement = document.querySelector('.container .item:nth-child(3)'); 
   functionEnabled = true;
   overlay.style.visibility = 'collapse';
   overlay.style.opacity = '0';
   middleelement.classList.remove("annimate");
-  photocircle.style.visibility="collapse";
-
+  
+  console.log('middleelement:', middleelement);
+  console.log('middleelement.id:', middleelement.id);
+  console.log('Key pressed:', event.key);
+  console.log(middleelement);
+  overlay.style.visibility = 'hidden';
+  overlay.style.opacity = '0';
+  middleelement.classList.remove("annimate");
+  container2.style.visibility="visible"
+  container2.style.height="100vh"
+  container2.style.width="100vw"
+  container2.style.marginTop="75vh"
   if (darkmodestate === true){
-    light.style.background="white"
-    light.style.boxShadow= "0px -50px 200px rgb(255, 255, 255,0.8),0px -100px 200px rgb(255, 255, 255,0.6),0px -150px 200px rgb(255, 255, 255,0.4),0px -200px 200px rgb(255, 255, 255,0.2)"
-    light.style.filter="blur(20px)";
+  light.style.background="white"
+  light.style.boxShadow= "0px -50px 200px rgb(255, 255, 255,0.8),0px -100px 200px rgb(255, 255, 255,0.6),0px -150px 200px rgb(255, 255, 255,0.4),0px -200px 200px rgb(255, 255, 255,0.2)"
+  light.style.filter="blur(20px)";
+  overlay.style.background = "black";
   }
-  for (let i = 0; i < 9; i++) {
-    const photos = photocircle.children[i];
-    if (photos) {
-      photos.style.transform =`rotate(0deg) translateX(0vh)`; 
-      photos.style.opacity = '0'; // Make dot visible
+  else{
+  overlay.style.background = "white";
+  }
+  
+  
+  
+  const targetElementId = myDictionary[middleelement.id];
+  const targetElement = document.querySelector(targetElementId);
+  
+  
+  console.log('targetElementId',targetElementId)
+  console.log('targetElement',targetElement)
+  
+  
+  
+  targetElement.style.visibility="hidden"
+  for (let i = 0; i < 12; i++) {
+    const items = targetElement.children[i];
+    if (items) {
+      items.style.transform =`rotate(0deg) translateX(0)`; 
+      items.style.opacity = '0'; //
     }
-  }}
+  }
+
+  
+}
 
 });
 
 
-// backgroundgradient.addEventListener('click',function
 
 
 
+
+const dots = document.querySelectorAll(".dot");
+
+dots.forEach(dot => {
+  dot.addEventListener('click', function () {
+    if (this.classList.contains("active")) {
+      this.classList.remove("active");
+      circlemovement="True"
+      this.classList.add('movement');
+      this.style.width = "12vw";  
+      this.style.height = "12vw";
+      this.style.opacity = "1";
+      this.style.right = "25vw";
+      this.style.top = "0";
+      this.style.borderRadius = "10vw";
+      this.style.zIndex="6"
+
+      const index = Array.from(this.parentElement.children).indexOf(this);
+      const targetAngle = -index * 40;
+      this.style.transform = `rotate(${targetAngle}deg) translateX(65vh)`;
+
+    } else {
+      // Remove 'active' from all other dots
+
+      dots.forEach(d => {
+        d.classList.remove("active");
+        d.classList.add("movement");
+        d.style.width = "12vw";
+        d.style.height = "12vw";
+        d.style.opacity = "1";
+        d.style.right = "25vw";
+        d.style.top = "0";
+        d.style.borderRadius = "10vw";
+        // Optional: reapply the circular transform if needed
+        const index = Array.from(d.parentElement.children).indexOf(d);
+        const targetAngle = -index * 40;
+        d.style.transform = `rotate(${targetAngle}deg) translateX(65vh)`;
+        this.style.zIndex="6"
+      });
+
+      // Enlarge the clicked dot
+      circlemovement="False"
+      this.classList.add("active");
+      this.classList.remove('movement')
+      this.style.width = "100vw";
+      this.style.height = "100vh";
+      this.style.opacity = "1";
+      this.style.right="23vw";
+      this.style.top="-40vh"
+      this.style.borderRadius="0"
+      this.style.zIndex="10"
+      this.style.transform = "rotate(180deg) translateX(0)";
+      
+    }
+  });
+});
 
 
 
@@ -711,4 +704,5 @@ if (event.key === 's') {
 //  };
 
 //  buttonEl.addEventListener('click', () => run());
+
 
