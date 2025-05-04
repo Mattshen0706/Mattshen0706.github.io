@@ -288,11 +288,49 @@ transform:translate3d(-25vw,0,0) scale(1.1);
     align-items: center;
     visibility:hidden;
     z-index: 5;
-    transform:scaleY(-1);
 
 }
 
-.dot {
+.container4{
+    position:absolute;
+    top:0;
+    width:100vw;
+    height:100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    visibility:hidden;
+    z-index: 5;
+
+}
+
+.container5{
+    position:absolute;
+    top:0;
+    width:100vw;
+    height:100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    visibility:hidden;
+    z-index: 5;
+
+}
+
+.container6{
+    position:absolute;
+    top:0;
+    width:100vw;
+    height:100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    visibility:hidden;
+    z-index: 5;
+
+}
+
+.photo{
     position:absolute;
     width:12vw;
     height:12vw;
@@ -304,6 +342,72 @@ transform:translate3d(-25vw,0,0) scale(1.1);
     background-position: center;  
     background-repeat: no-repeat;
     transition:1s ease-in-out;
+    transition: width height 0.8s;
+}
+
+
+.fashion{
+    position:absolute;
+    width:12vw;
+    height:12vw;
+    border-radius: 10vw;
+    right:0vw;
+    top:calc(-5vw+50vh);
+    opacity:0;
+    background-size: cover;  
+    background-position: center;  
+    background-repeat: no-repeat;
+    transition:1s ease-in-out;
+    transition: width height 0.8s;
+}
+
+
+
+
+.athlete{
+    position:absolute;
+    width:12vw;
+    height:12vw;
+    border-radius: 10vw;
+    right:0vw;
+    top:calc(-5vw+50vh);
+    opacity:0;
+    background-size: cover;  
+    background-position: center;  
+    background-repeat: no-repeat;
+    transition:1s ease-in-out;
+    transition: width height 0.8s;
+}
+
+
+.graphic{
+    position:absolute;
+    width:12vw;
+    height:12vw;
+    border-radius: 10vw;
+    right:0vw;
+    top:calc(-5vw+50vh);
+    opacity:0;
+    background-size: cover;  
+    background-position: center;  
+    background-repeat: no-repeat;
+    transition:1s ease-in-out;
+    transition: width height 0.8s;
+}
+
+.chef{
+    position:absolute;
+    width:12vw;
+    height:12vw;
+    border-radius: 10vw;
+    right:0vw;
+    top:calc(-5vw+50vh);
+    opacity:0;
+    background-size: cover;  
+    background-position: center;  
+    background-repeat: no-repeat;
+    transition:1s ease-in-out;
+    transition: width height 0.8s;
 }
 
 /* 
@@ -359,3 +463,11 @@ transform:translate3d(-25vw,0,0) scale(1.1);
     font-size: 2vw;
     font-weight: bolder;
 }
+
+
+.dot:hover{
+    width:14vw;
+    height:14vw;
+}
+
+

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Random Ghibli Film</title>
+    <link rel="stylesheet" type="text/css" href="COLOR.css">
+    <style>
+
+      #card {
+        background: white;
+        border-radius: 1rem;
+        padding: 2rem;
+        max-width: 600px;
+        margin: auto;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      img {
+        max-width: 100%;
+        border-radius: 1rem;
+        margin-bottom: 1rem;
+      }
+      button{
+        margin-top: 2vh;
+        height:5vh;
+        width:20vw;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+        <div class="column1" >
+          <div class="preview1" id="column1"></div>
+          <div class="containersmall">
+<input id="input1" class="box"type='text' />
+<input id="input2" class="box"type='text' />
+<input id="input3" class="box"type='text' />
+</div>
+        </div>
+        <div class="column3" id="buttonclick"  >
+  GENERATE <br> PALETTE
+          </div>
+        <div class="column2">
+          <div class="preview1" id="column2"></div>
+          <div class="containersmall">
+<input id="input4"class="box"type='text' />
+<input id="input5"class="box"type='text' />
+<input id="input6"class="box"type='text' />
+</div>
+    </div>
+
+    </div>
+
+
+    <div class="container">
+<div id="color1" class="color1"></div>
+<div id="color2" class="color2"></div>
+<div id="color3" class="color3"></div>
+<div id="color4"class="color4"></div>
+<div id="color5"class="color5"></div>
+    </div>
+
+    <script src="COLOR.js"> 
+    </script>
+  </body>
+</html>

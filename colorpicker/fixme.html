@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Bad Design Example</title>
+    <style>
+      body {
+        background-color: rgb(255, 255, 255);
+        color: rgb(41, 41, 41);
+        font-family: Arial, Helvetica, sans-serif;
+margin:0;
+padding:0;
+        text-align: center;
+      }
+.containerheader{
+    display:flex;
+    justify-content: center;
+    justify-content: space-around;
+}
+      h1 {
+
+        font-size: 2vw;
+
+      }
+
+      p {
+        font-size: 1vw;
+        margin: 0 auto;
+        width: 30%;
+        line-height: 1.1;
+      }
+
+      .button {
+        margin-top: 5vh;
+        display: inline-block;
+        color: rgb(0, 0, 0);
+        font-size: 1vw;
+        text-decoration: none;
+        border-radius: 10px;
+        border-color: black;
+        border-style:groove;
+        padding-right: 20px;
+        padding-left: 20px;
+      }
+
+      img {
+        width: 50%;
+        border-radius: 5vw;
+        margin-bottom: 5vw;
+        margin-top: 5vw;
+      }
+
+      nav {
+        background-color: rgb(255, 255, 255);
+        padding: 10px;
+        margin-bottom: 5vh;
+        margin-top: 5vh;
+
+      }
+
+
+      nav a {
+        color: rgb(0, 0, 0);
+        text-decoration: none;
+        margin: 15px;
+        font-size: 1vw;
+      }
+
+      footer {
+        font-size: 10px;
+        margin-top: 50px;
+      }
+    </style>
+  </head>
+  <body>
+
+    <div class="containerheader">
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </nav>
+    </div>
+
+    <h1>Welcome To My Page!</h1>
+
+    <img
+      src="https://cdn.britannica.com/39/226539-050-D21D7721/Portrait-of-a-cat-with-whiskers-visible.jpg"
+      alt="Banner Cat"
+    />
+
+    <p>
+      This is a very informative paragraph that talks about many very important
+      things that you might want to read about. Please read all of it because it
+      is very important.
+    </p>
+
+    <a class="button" href="#">Click Here</a>
+
+    <footer>© 2025 My Webpage. All rights reserved maybe?</footer>
+  </body>
+</html>

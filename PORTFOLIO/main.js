@@ -51,23 +51,26 @@ const photo2=document.getElementById("photo2")
 const photo3=document.getElementById("photo3")
 const photo4=document.getElementById("photo4")
 const photo5=document.getElementById("photo5")
-const photo6=document.getElementById("photo6")
-const photo7=document.getElementById("photo7")
-const photo8=document.getElementById("photo8")
-const photo9=document.getElementById("photo9")
-const photo10=document.getElementById("photo10")
-const photo11=document.getElementById("photo11")
+
+// const photo6=document.getElementById("photo6")
+// const photo7=document.getElementById("photo7")
+// const photo8=document.getElementById("photo8")
+// const photo9=document.getElementById("photo9")
+// const photo10=document.getElementById("photo10")
+// const photo11=document.getElementById("photo11")
+
 container.appendChild(photo1)
 container.appendChild(photo2)
 container.appendChild(photo3)
 container.appendChild(photo4)
 container.appendChild(photo5)
-container.appendChild(photo6)
-container.appendChild(photo7)
-container.appendChild(photo8)
-container.appendChild(photo9)
-container.appendChild(photo10)
-container.appendChild(photo11)
+
+// container.appendChild(photo6)
+// container.appendChild(photo7)
+// container.appendChild(photo8)
+// container.appendChild(photo9)
+// container.appendChild(photo10)
+// container.appendChild(photo11)
 // for (let i=0;i<50;i++){                                                                                    
 //     let div=document.createElement('div');
 //     div.className="item";
@@ -100,7 +103,7 @@ function appendPrev(){
 let functionEnabled = true;
 
     document.addEventListener('keydown', function(event) {
-      if (functionEnabled = true){
+      if (functionEnabled === true){
         if (event.key === 'a') {
           // Call your function here
           appendPrev();
@@ -232,120 +235,115 @@ http.send(JSON.stringify(data));
 
 
 
+const photocircle = document.querySelector('.container3');
+const chefcircle = document.querySelector('.container4');
+const graphiccircle = document.querySelector('.container5');
+const athletecircle = document.querySelector('.container6');
+const fashioncircle = document.querySelector('.container7');
 
 
 
+const photos = document.querySelectorAll('.photo'); // creates a list
 
-const mediacircle = document.querySelector('.container3');
-
-
-const dot1=document.getElementById("dot1")
-const dot2=document.getElementById("dot2")
-const dot3=document.getElementById("dot3")
-const dot4=document.getElementById("dot4")
-const dot5=document.getElementById("dot5")
-const dot6=document.getElementById("dot6")
-const dot7=document.getElementById("dot7")
-const dot8=document.getElementById("dot8")
-const dot9=document.getElementById("dot9")
-const dot10=document.getElementById("dot10")
-const dot11=document.getElementById("dot11")
-const dot12=document.getElementById("dot12")
+photos.forEach(photo => {
+  photocircle.appendChild(photo); //iterates through the list
+});
 
 
-mediacircle.appendChild(dot1)
-mediacircle.appendChild(dot2)
-mediacircle.appendChild(dot3)
-mediacircle.appendChild(dot4)
-mediacircle.appendChild(dot5)
-mediacircle.appendChild(dot6)
-mediacircle.appendChild(dot7)
-mediacircle.appendChild(dot8)
-mediacircle.appendChild(dot9)
-mediacircle.appendChild(dot10)
-mediacircle.appendChild(dot11)
-mediacircle.appendChild(dot12)
+const chefs = document.querySelectorAll('.chef'); // creates a list
+
+chefs.forEach(chef => {
+  chefcircle.appendChild(chef); //iterates through the list
+});
+
+const graphics = document.querySelectorAll('.graphic'); // creates a list
+
+graphics.forEach(graphic => {
+  graphiccircle.appendChild(graphic); //iterates through the list
+});
 
 
-// const mediacircle2 = document.querySelector('.container4');
+const athletes = document.querySelectorAll('.athlete'); // creates a list
 
-// const dot21=document.getElementById("dot21")
-// const dot22=document.getElementById("dot22")
-// const dot23=document.getElementById("dot23")
-// const dot24=document.getElementById("dot24")
-// const dot25=document.getElementById("dot25")
-// const dot26=document.getElementById("dot26")
-// const dot27=document.getElementById("dot27")
-// const dot28=document.getElementById("dot28")
-// const dot29=document.getElementById("dot29")
-// const dot210=document.getElementById("dot210")
-// const dot211=document.getElementById("dot211")
-// const dot212=document.getElementById("dot212")
+athletes.forEach(athlete => {
+  athletecircle.appendChild(athlete); //iterates through the list
+});
+
+const fashions = document.querySelectorAll('.fashion'); // creates a list
+
+fashions.forEach(fashion => {
+  fashioncircle.appendChild(fashion); //iterates through the list
+});
 
 
-// mediacircle2.appendChild(dot21)
-// mediacircle2.appendChild(dot22)
-// mediacircle2.appendChild(dot23)
-// mediacircle2.appendChild(dot24)
-// mediacircle2.appendChild(dot25)
-// mediacircle2.appendChild(dot26)
-// mediacircle2.appendChild(dot27)
-// mediacircle2.appendChild(dot28)
-// mediacircle2.appendChild(dot29)
-// mediacircle2.appendChild(dot210)
-// mediacircle2.appendChild(dot211)
-// mediacircle2.appendChild(dot212)
 
-
-// const mediacircle3 = document.querySelector('.container5');
-
-
-// const dot31=document.getElementById("dot31")
-// const dot32=document.getElementById("dot32")
-// const dot33=document.getElementById("dot33")
-// const dot34=document.getElementById("dot34")
-// const dot35=document.getElementById("dot35")
-// const dot36=document.getElementById("dot36")
-// const dot37=document.getElementById("dot37")
-// const dot38=document.getElementById("dot38")
-// const dot39=document.getElementById("dot39")
-// const dot310=document.getElementById("dot310")
-// const dot311=document.getElementById("dot311")
-// const dot312=document.getElementById("dot312")
-
-
-// mediacircle3.appendChild(dot31)
-// mediacircle3.appendChild(dot32)
-// mediacircle3.appendChild(dot33)
-// mediacircle3.appendChild(dot34)
-// mediacircle3.appendChild(dot35)
-// mediacircle3.appendChild(dot36)
-// mediacircle3.appendChild(dot37)
-// mediacircle3.appendChild(dot38)
-// mediacircle3.appendChild(dot39)
-// mediacircle3.appendChild(dot310)
-// mediacircle3.appendChild(dot311)
-// mediacircle3.appendChild(dot312)
-
-
-function appendNextDot(){
-  let dots = document.querySelectorAll('.dot');
-    mediacircle.appendChild(dots[0]);
+function appendNextPhoto(){
+    const photos = photocircle.children;
+    photocircle.appendChild(photos[0]);
 }
 
-function appendPrevDot(){
-  let dots = document.querySelectorAll('.dot');
-    mediacircle.prepend(dots[dots.length-1]);
+function appendPrevPhoto(){
+    const photos = photocircle.children;
+    photocircle.prepend(photos[photos.length-1]);
 }
+
+function appendNextChef(){
+    const chefs = chefcircle.children;
+    chefcircle.appendChild(chefs[0]);
+}
+
+function appendPrevChef(){
+  const chefs = chefcircle.children;
+  chefcircle.prepend(chefs[chefs.length-1]);
+}
+
+function appendNextGraphic(){
+  const graphics = graphiccircle.children;
+    graphiccircle.appendChild(graphics[0]);
+}
+
+function appendPrevGraphic(){
+  const graphics = graphiccircle.children;
+  graphiccircle.prepend(graphics[graphics.length-1]);
+}
+
+
+function appendNextAthlete(){
+  const athletes = athletecircle.children;
+    athletecircle.appendChild(athletes[0]);
+}
+
+function appendPrevAthlete(){
+  const athletes = athletecircle.children;
+  athletecircle.prepend(athletes[athletes.length-1]);
+}
+
+function appendNextFashion(){
+  const fashions = fashioncircle.children;
+    fashioncircle.appendChild(fashions[0]);
+}
+
+function appendPrevFashion(){
+  const fashions = fashioncircle.children;
+  fashioncircle.prepend(fashions[fashions.length-1]);
+}
+
+
+
+
 
 document.addEventListener('keydown', function(event) {
+
+  const middleelement = document.querySelector('.container .item:nth-child(3)');  
+
   if (event.key === 'j') {
     // Call your function here
     appendPrevDot();
     for (let i = 0; i < 9; i++) {
       const dotss = mediacircle.children[i];
     if (dotss) {
-      dotss.style.transform =`rotate(${-i*40}deg) translateX(65vh)` ; 
+      const targetAngle = -i * 40;
+      dotss.style.transform =`rotate(${targetAngle}deg) translateX(65vh)` ; 
       dotss.style.opacity = '1'; // Make dot visible
     }
   }
@@ -357,7 +355,8 @@ if (event.key === 'l') {
   for (let i = 0; i < 9; i++) {
   const dotss = mediacircle.children[i];
   if (dotss) {
-    dotss.style.transform =`rotate(${-i*40}deg) translateX(65vh)`; 
+    const targetAngle = -i * 40;
+    dotss.style.transform =`rotate(${targetAngle}deg) translateX(65vh)`; 
     dotss.style.opacity = '1'; // Make dot visible
   }
 }
@@ -366,72 +365,12 @@ if (event.key === 'l') {
 });
 
 
-const overlay=document.getElementById("overlay")
 
 
 
-document.addEventListener('keydown', function(event) {
-  console.log('Key pressed:', event.key);
-  if (event.key === 'w') {  
-  functionEnabled = false;
-  const middleelement = document.querySelector('.container .item:nth-child(3)');  
-  overlay.style.visibility = 'visible';
-  overlay.style.opacity = '1';
-  
-  middleelement.classList.add("annimate");
-  mediacircle.style.visibility="visible"
-  if (darkmodestate === true){
-  light.style.background="none"
-  light.style.boxShadow= "none"
-  light.style.filter="none";
-  overlay.style.background = "black";
-  }
-else{
-  overlay.style.background = "white";
-}
 
-  for (let i = 0; i < 9; i++) {
-    const dotss = mediacircle.children[i];
-    if (dotss) {
-      dotss.style.transform =`rotate(${-i*40}deg) translateX(65vh)`; 
-      dotss.style.opacity = '1'; // Make dot visible
-    }
+// DARKMODE
 
-  }
-  // for (let i = 0; i < 5; i++) {
-  //   const dotss = mediacircle.children[i];
-  //   if (dotss) {
-  //     dotss.style.animation = `${animationNames[i]} 1s forwards`;
-  //     dotss.style.opacity = '1'; // Make dot visible
-  //   }
-  // }
-}
-
-if (event.key === 's') {
-  functionEnabled = true;
-  const middleelement = document.querySelector('.container .item:nth-child(3)');
-  overlay.style.visibility = 'collapse';
-  overlay.style.opacity = '0';
-  middleelement.classList.remove("annimate");
-  mediacircle.style.visibility="collapse";
-
-  if (darkmodestate === true){
-    light.style.background="white"
-    light.style.boxShadow= "0px -50px 200px rgb(255, 255, 255,0.8),0px -100px 200px rgb(255, 255, 255,0.6),0px -150px 200px rgb(255, 255, 255,0.4),0px -200px 200px rgb(255, 255, 255,0.2)"
-    light.style.filter="blur(20px)";
-  }
-  for (let i = 0; i < 9; i++) {
-    const dotss = mediacircle.children[i];
-    if (dotss) {
-      dotss.style.transform =`rotate(0deg) translateX(0vh)`; 
-      dotss.style.opacity = '0'; // Make dot visible
-    }
-  }}
-
-});
-
-
-// backgroundgradient.addEventListener('click',function
 
 const light=document.querySelector('.light')
 //})
@@ -468,6 +407,160 @@ else{
 }
 
 })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+const overlay=document.getElementById("overlay")
+
+let myDictionary={}
+
+myDictionary["photo1"] = "photocircle"
+myDictionary["photo2"] = "chefcircle"
+myDictionary["photo3"] = "graphiccircle"
+myDictionary["photo4"] = "athletecircle"
+myDictionary["photo5"] = "fashioncircle"
+
+
+document.addEventListener('keydown', function(event){
+  const middleelement = document.querySelector('.container .item:nth-child(3)');  
+  console.log('Key pressed:', event.key);
+  console.log('middleelement.id:', middleelement.id);
+  if (event.key === 'w') {  
+  console.log(middleelement);
+  functionEnabled = false;
+  overlay.style.visibility = 'visible';
+  overlay.style.opacity = '1';
+  middleelement.classList.add("annimate");
+  if (darkmodestate === true){
+  light.style.background="none"
+  light.style.boxShadow= "none"
+  light.style.filter="none";
+  overlay.style.background = "black";
+  }
+else{
+  overlay.style.background = "white";
+}
+console.log("middleelement.id:", middleelement.id);
+const targetElementId = myDictionary[middleelement.id];
+const targetElement = document.getElementById(targetElementId);
+console.log(targetElement)
+targetElement.style.visibility="visible"
+  for (let i = 0; i < 12; i++) {
+    const items = targetElement.children[i];
+    if (items) {
+      const targetAngle = -i * 40;
+      items.style.transform =`rotate(${targetAngle}deg) translateX(65vh)`; 
+      items.style.opacity = '1'; //
+    }
+  }
+}
+
+  // if (middleelement.id === 'photo2')
+  //   chefcircle.style.visibility="visible"
+  //   for (let i = 0; i < 12; i++) {
+  //     const chefs = chefcircle.children[i];
+  //     if (chefs) {
+  //       const targetAngle = -i * 40;
+  //       chefs.style.transform =`rotate(${targetAngle}deg) translateX(65vh)`; 
+  //       chefs.style.opacity = '1'; // Make dot visible
+  //     }
+  //   }
+      
+  //   }
+
+  //   if (middleelement.id === 'photo3'){
+  //     graphiccircle.style.visibility="visible"
+  //     for (let i = 0; i < 12; i++) {
+  //       const graphics = graphiccircle.children[i];
+  //       if (graphics) {
+  //         const targetAngle = -i * 40;
+  //         graphics.style.transform =`rotate(${targetAngle}deg) translateX(65vh)`; 
+  //         graphics.style.opacity = '1'; // Make dot visible
+  //       }
+  //     }
+        
+  //     }
+
+  //     if (middleelement.id === 'photo4'){
+  //         athletecircle.style.visibility="visible"
+  //         for (let i = 0; i < 12; i++) {
+  //           const athletes = athletecircle.children[i];
+  //           if (athletes) {
+  //             const targetAngle = -i * 40;
+  //             athletes.style.transform =`rotate(${targetAngle}deg) translateX(65vh)`; 
+  //             athletes.style.opacity = '1'; // Make dot visible
+  //           }
+  //         }
+            
+  //         }
+
+
+  //         if (middleelement.id === 'photo5'){
+  //       fashioncircle.style.visibility="visible"
+  //       for (let i = 0; i < 12; i++) {
+  //         const fashions = fashioncircle.children[i];
+  //         if (fashions) {
+  //           const targetAngle = -i * 40;
+  //           fashions.style.transform =`rotate(${targetAngle}deg) translateX(65vh)`; 
+  //           fashions.style.opacity = '1'; // Make dot visible
+  //         }
+  //       }
+          
+  //       }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+if (event.key === 's') {
+  functionEnabled = true;
+  overlay.style.visibility = 'collapse';
+  overlay.style.opacity = '0';
+  middleelement.classList.remove("annimate");
+  photocircle.style.visibility="collapse";
+
+  if (darkmodestate === true){
+    light.style.background="white"
+    light.style.boxShadow= "0px -50px 200px rgb(255, 255, 255,0.8),0px -100px 200px rgb(255, 255, 255,0.6),0px -150px 200px rgb(255, 255, 255,0.4),0px -200px 200px rgb(255, 255, 255,0.2)"
+    light.style.filter="blur(20px)";
+  }
+  for (let i = 0; i < 9; i++) {
+    const photos = photocircle.children[i];
+    if (photos) {
+      photos.style.transform =`rotate(0deg) translateX(0vh)`; 
+      photos.style.opacity = '0'; // Make dot visible
+    }
+  }}
+
+});
+
+
+// backgroundgradient.addEventListener('click',function
+
 
 
 
