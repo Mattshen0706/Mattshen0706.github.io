@@ -1,35 +1,3 @@
-// navigator.mediaDevices.getUserMedia({
-//   video: true,
-//   audio: true
-// }).then(async function(stream) {
-//   let recorder = RecordRTC(stream, {
-//       type: 'video'
-//   });
-//   recorder.startRecording();
-
-//   const sleep = m => new Promise(r => setTimeout(r, m));
-//   await sleep(3000);
-
-//   recorder.stopRecording(function() {
-//       let blob = recorder.getBlob();
-//       invokeSaveAsDialog(blob);
-//   });
-// });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -52,12 +20,6 @@ const photo3=document.getElementById("photo3")
 const photo4=document.getElementById("photo4")
 const photo5=document.getElementById("photo5")
 
-// const photo6=document.getElementById("photo6")
-// const photo7=document.getElementById("photo7")
-// const photo8=document.getElementById("photo8")
-// const photo9=document.getElementById("photo9")
-// const photo10=document.getElementById("photo10")
-// const photo11=document.getElementById("photo11")
 
 container.appendChild(photo1)
 container.appendChild(photo2)
@@ -65,18 +27,6 @@ container.appendChild(photo3)
 container.appendChild(photo4)
 container.appendChild(photo5)
 
-// container.appendChild(photo6)
-// container.appendChild(photo7)
-// container.appendChild(photo8)
-// container.appendChild(photo9)
-// container.appendChild(photo10)
-// container.appendChild(photo11)
-// for (let i=0;i<50;i++){                                                                                    
-//     let div=document.createElement('div');
-//     div.className="item";
-//     div.textContent=i;
-//     container.appendChild(div)        
-// }
 
 
 function appendNext1(){
@@ -89,15 +39,6 @@ function appendPrev1(){
         container.prepend(items[items.length-1]);
 }
 
-// section.addEventListener('wheel',function(event){
-//     const scrollAmount = event.deltaX * sensitivity;
-//     section.scrollBy(0, scrollAmount);
-//     if (event.deltaX*0.0000000001>0){
-//         appendNext()
-//     }else{
-//         appendPrev();
-//     }
-//     }, { passive: false });
 
 
 let functionEnabled = true;
@@ -121,7 +62,7 @@ let functionEnabled = true;
 
 
 
-// COLOR GENERATOR FOR SECTION 2 OF THE PAGE
+// COLOR GENERATOR FOR SECTION 2 OF THE PAGE USING COLOR API "http://colormind.io/api/"
 const backgroundgradient=document.getElementById("multicolor")
 const previewgradient=document.getElementById("moodbar")
 window.onload = function() {
@@ -560,149 +501,5 @@ dots.forEach(dot => {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//  // required dom elements
-// const buttonEl = document.getElementById('button');
-// const messageEl = document.getElementById('message');
-// const titleEl = document.getElementById('real-time-title');
-
-// // initial states and global variables
-// messageEl.style.display = 'none';
-// let isRecording = false;
-// let socket;
-// let recorder;
-
-
-
-// const run = async () => {
-//   isRecording = !isRecording;
-//   buttonEl.innerText = isRecording ? 'Stop' : 'Record';
-//   titleEl.innerText = isRecording ? 'Click stop to end recording!' : 'Click start to begin recording!'
- 
-//   if (!isRecording) {
- 
-//     if (recorder) {
-//       recorder.pauseRecording();
-//       recorder = null;
-//     }
-    
-//     if (socket) {
-//       socket.send(JSON.stringify({terminate_session: true}));
-//       socket.close();
-//       socket = null;
-//     }
- 
-//   } else {
-
-
-// // get session token from backendconst response = await fetch('http://localhost:8000');
-// const data = await response.json();
-
-// if(data.error){
-//    alert(data.error)
-// }
-   
-// const { token } = data;
-
-// // establish wss with AssemblyAI at 16000 sample rate
-// socket = new WebSocket(`wss://api.assemblyai.com/v2/realtime/ws?sample_rate=16000&token=${token}`);
-
-// // handle incoming messages to display transcription to the DOMconst texts = {};
-// socket.onmessage = (message) => {
-//    let msg = '';
-//    const res = JSON.parse(message.data);
-//    texts[res.audio_start] = res.text;
-//    const keys = Object.keys(texts);
-//    keys.sort((a, b) => a - b);
-//    for (const key of keys) {
-//        if (texts[key]) {
-//            msg += ` ${texts[key]}`;
-//        }
-//    }
-//    messageEl.innerText = msg;
-// };
-
-// // handle error
-// socket.onerror = (event) => {
-//    console.error(event);
-//    socket.close();
-// }
-   
-// // handle socket close
-// socket.onclose = event => {
-//    console.log(event);
-//    socket = null;
-// }
-
-// // handle socket open
-// socket.onopen = () => {
-//    // begin recording
-//    messageEl.style.display = '';
-//    navigator.mediaDevices.getUserMedia({ audio: true })
-//    .then((stream) => {
-//        recorder = new RecordRTC(stream, {
-//        type: 'audio',
-//        mimeType: 'audio/webm;codecs=pcm', // endpoint requires 16bit PCM audio
-//        recorderType: StereoAudioRecorder,
-//        timeSlice: 250, // set 250 ms intervals of data
-//        desiredSampRate: 16000,
-//        numberOfAudioChannels: 1, // real-time requires only one channel
-//        bufferSize: 4096,
-//        audioBitsPerSecond: 128000,
-//        ondataavailable: (blob) => {
-//            const reader = new FileReader();
-//            reader.onload = () => {
-//                const base64data = reader.result;
-
-//                // audio data must be sent as a base64 encoded string
-//                if (socket) {
-//                    socket.send(JSON.stringify({ audio_data: base64data.split('base64,')[1] }));
-//                }
-//            };
-//            reader.readAsDataURL(blob);
-//        },
-//    });
-
-//    recorder.startRecording();
-//    })
-//    .catch((err) => console.error(err));
-// };
-
-
-
-
-//   }
-//  };
-
-//  buttonEl.addEventListener('click', () => run());
 
 
